@@ -44,6 +44,9 @@ p {
 }
 
 a {
+    font-family: var(--urbanist-);
+    font-size: 16px;
+    color: var(--cl-txt);
 }
 
 .word-top5 {
@@ -259,7 +262,7 @@ a {
     justify-content: center;
     position: absolute;
     margin-top: 60px;
-    margin-left: 500px;
+    margin-left: 520px;
     padding-left: 20px;
     padding-right: 20px;
     background-color: var(--cl-bgc);

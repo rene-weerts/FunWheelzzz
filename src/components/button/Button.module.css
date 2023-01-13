@@ -1,0 +1,81 @@
+
+.container {
+    font-family: var(--urbanist-);
+    position: relative;
+    /*background-color: white;*/
+    background-color: var(--cl-bgc);
+    /*color: white;*/
+    color: var(--cl-txt);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    /*font-weight: 400;*/
+    padding: 10px 30px;
+    transition: 0.5s;
+
+}
+
+.container:hover {
+    background-color: var(--cl-rood);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px var(--cl-rood);
+    /*    tot hier is al goed */
+}
+
+.container:before {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: var(--cl-bgc);
+}
+
+/*is span element*/
+.default-button {
+    position: relative;
+    z-index: 1;
+
+}
+
+/*is i element*/
+.button-i {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+.button-i::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 10px;
+    height: 4px;
+    background: var(--cl-txt);
+    transform: translateX(50%) skewX(325deg);
+    transition: 0.5s;
+}
+
+.container:hover .button-i::before {
+    width: 20px;
+    left: 20px;
+
+}
+.button-i::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 10px;
+    height: 4px;
+    background: var(--cl-txt);
+    transform: translateX(50%) skewX(325deg);
+    transition: 0.5s;
+}
+
+.container:hover .button-i::after {
+    width: 20px;
+    left: 80%;
+
+}
+

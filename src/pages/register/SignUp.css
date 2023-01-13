@@ -43,11 +43,14 @@
 .register-text-p {
     margin: 20px;
 }
-
+::placeholder{
+    color:black;
+}
 #email {
     line-height: 40px;
     padding-left: 20px;
     align-self: stretch;
+    background-color: var(--cl-bgc);
     opacity: 0.5;
 }
 
@@ -55,6 +58,8 @@
     line-height: 40px;
     padding-left: 20px;
     align-self: stretch;
+    color: var(--cl-txt);
+    background-color: var(--cl-bgc);
     opacity: 0.5;
 }
 
@@ -62,6 +67,8 @@
     line-height: 40px;
     padding-left: 20px;
     align-self: stretch;
+    color: var(--cl-txt);
+    background-color: var(--cl-bgc);
     opacity: 0.5;
 }
 
@@ -69,7 +76,7 @@
     display: flex;
     justify-content: center;
     align-self: stretch;
-
+margin-top: 30px;
 }
 
 .register-button {

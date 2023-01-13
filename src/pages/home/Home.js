@@ -7,7 +7,7 @@ import fotoBakkerij from '../../assets/foto-bakkerij.jpeg';
 import fotoBasilica from '../../assets/foto-eten-basilica.jpeg';
 import fotoAccommodatie from '../../assets/foto-accommodatie.jpg';
 import fotoContactForm from '../../assets/achtergrond-contact-formulier.jpg';
-
+import Button from '../../components/button/Button';
 
 const Home = () => {
 
@@ -82,6 +82,7 @@ const Home = () => {
                             </h3>
                         </div>
                     </article>
+
                 </main>
             </section>
             <div className="outer-container-picture-form">
@@ -92,15 +93,16 @@ const Home = () => {
                         <h3 className="question-text-form"> Vragen of tips?</h3>
                         <h3>Wij horen graag van u...</h3>
                     </div>
-                    <div className="form-text">
-                        <label htmlFor="name"><p>Name</p></label>
+                    <div id="form-contact-link-bottom" className="form-text">
+                        <label htmlFor="name"><p>Naam</p></label>
                         <input placeholder="Name" id="name"/>
                         <label htmlFor="email"><p>Email</p></label>
                         <input placeholder="Email" id="email"/>
-                        <label htmlFor="message"><p>Message</p></label>
+                        <label htmlFor="message"><p>Bericht</p></label>
                         <input placeholder="Message" id="message"/>
                         <div className="button-div">
-                            <button className="button-form" type="submit"><p>Send</p></button>
+                            {/*<button className="button-form" type="submit"><p>Verstuur</p></button>*/}
+                            <Button/>
                         </div>
                     </div>
 
