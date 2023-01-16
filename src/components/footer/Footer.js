@@ -32,15 +32,15 @@ const Footer = () => {
 
                     <div className={styles["footer-container-1"]}>
                         <ul>
-                            <li className={"footer-list-items"}>
-                                <a href="#home-header" className={styles['footer-a-tag']}><p className={styles['footer-p-tag']}>Home</p></a>
+                            <li className={'footer-list-items'}>
+                                <a href="#home-header" className={styles['footer-a-tag']}><p
+                                    className={styles['footer-p-tag']}>Home</p></a>
                             </li>
-                            <li className={"footer-list-items"}>
-                                <a href="#home-header" className={styles['footer-a-tag']}><p className={styles['footer-p-tag']}>Events</p></a>
+                            <li className={'footer-list-items'}>
+                                <a href="regio" className={styles['footer-a-tag']}><p
+                                    className={styles['footer-p-tag']}>Regio</p></a>
                             </li>
-                            <li className={"footer-list-items"}>
-                                <a href="#home-header" className={styles['footer-a-tag']}><p className={styles['footer-p-tag']}>Strava</p></a>
-                            </li>
+
                         </ul>
 
                     </div>
@@ -76,15 +76,16 @@ const Footer = () => {
 
                 <div className={styles["footer-container-3"]}>
                     <ul>
-                        <li className={"footer-list-items"}>
-                            <a href="/" className={styles['footer-a-tag']}><p className={styles['footer-p-tag']}>Donate</p></a>
+                        <li className={'footer-list-items'}>
+                            <a href="/" className={styles['footer-a-tag']}><p
+                                className={styles['footer-p-tag']}>Donate</p></a>
                         </li>
-                        <li className={"footer-list-items"}>
-                            <a href="#home-header" className={styles['footer-a-tag']}><p className={styles['footer-p-tag']}>Repair</p></a>
+                        <li className={'footer-list-items'}>
+                            <a href="https://www.strava.com/login" target="blanc
+                        k" className={styles['footer-a-tag']}><p className={styles['footer-p-tag']}>Strava</p></a>
                         </li>
-                        <li className={"footer-list-items"}>
-                            <a href="#home-header" className={styles['footer-a-tag']}><p className={styles['footer-p-tag']}>Shop</p></a>
-                        </li>
+
+
                     </ul>
 
                 </div>

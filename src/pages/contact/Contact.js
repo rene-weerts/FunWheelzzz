@@ -1,12 +1,11 @@
 import React from 'react';
-import './Shops.css' ;
 
-function Repair() {
+const Contact = () => {
     return (
         <div>
 
         </div>
     );
-}
+};
 
-export default Repair;
+export default Contact;

@@ -63,7 +63,13 @@ const Nav = ({auth, setAuth}) => {
 
 
                     {auth &&
-                        <a className={styles["nav-a-tag"]} href="#form-contact-link-bottom">Contact</a>
+                        <a className={styles["nav-a-tag"]} href="https://www.strava.com/login" target="blanc
+                        k">Strava</a>
+                    }
+
+
+                    {auth &&
+                        <a className={styles["nav-a-tag"]} href="#form-contact-link-bottom" >Contact</a>
                     }
                     {auth &&
                         <NavLink to="login" onClick={() => {

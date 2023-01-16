@@ -13,6 +13,7 @@
     --cl-txt: #302a27;
     --cl-rood: #990278;
     --cl-bgc: rgba(140, 140, 140, 0.72);
+    --cl-bgc-dark: rgba(140,140,140, 1);
 }
 
 h1 {
@@ -55,18 +56,21 @@ a {
 
 
 .img-header {
+    display: flex;
+    position: relative;
     width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-
+    box-shadow: 0 30px 60px -30px;
 }
 
 .img-main {
+    display: flex;
     width: 100%;
 }
 
 .header-outer-container {
     display: flex;
+    flex-direction: column;
+    margin: 0 20px;
     position: relative;
     justify-content: center;
     box-shadow: 0 30px 60px -30px;
@@ -94,29 +98,35 @@ a {
 
 .main-outer-container {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
     position: relative;
-    margin-top: 100px;
-    padding-right: 20px;
-    padding-left: 20px;
-    box-shadow: 0 30px 60px -30px;
+    margin: 100px 20px;
+
 }
 
-.text-1-top5 {
+.home-container-text1-top5 {
     display: flex;
+    position: absolute;
+    margin: 20px 1149px 0 20px;
+    padding: 80px 100px 100px 80px;
+    background-color: var(--cl-bgc);
+}
+
+.home-text1-top5 {
+    display: flex;
+    width: 200px;
     font-size: 60px;
     font-weight: bold;
-    position: absolute;
-    margin: 22px 1149px 0 0;
-    padding: 80px 100px 100px 80px;
     color: var(--cl-rood);
-    background-color: var(--cl-bgc);
+
 }
 
 .main-inner-container-text-top5 {
     display: flex;
     position: absolute;
     margin-top: 420px;
+    margin-left: 750px;
+    margin-right: 20px;
     padding: 100px 600px 100px 100px;
     background-color: rgba(140, 140, 140, 0.72);
 }
@@ -287,6 +297,11 @@ a {
     flex-direction: column;
 }
 
+::placeholder {
+    color: black;
+
+}
+
 #name {
     display: flex;
     justify-content: flex-start;
@@ -294,6 +309,7 @@ a {
     font-family: var(--urbanist-);
     line-height: 40px;
     padding-left: 10px;
+    background-color: var(--cl-bgc);
     opacity: 0.5;
 }
 
@@ -301,6 +317,7 @@ a {
     font-family: var(--urbanist-);
     line-height: 40px;
     padding-left: 10px;
+    background-color: var(--cl-bgc);
     opacity: 0.5;
 }
 
@@ -308,6 +325,7 @@ a {
     font-family: var(--urbanist-);
     line-height: 150px;
     padding-left: 10px;
+    background-color: var(--cl-bgc);
     opacity: 0.5;
 }
 

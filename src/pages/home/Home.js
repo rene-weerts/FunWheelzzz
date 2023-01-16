@@ -29,8 +29,8 @@ const Home = () => {
                 <main>
                     <article>
                         <div className="main-outer-container">
-                            <div className="text-1-top5">
-                                Top 5
+                            <div className="home-container-text1-top5">
+                                <p className="home-text1-top5">Top 5</p>
                             </div>
                             <img className="img-main" src={fotoMain} alt="foto-main"/>
                             <div className="main-inner-container-text-top5">

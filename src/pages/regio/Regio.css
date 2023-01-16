@@ -1,5 +1,147 @@
 
 
+.regio-main-outer-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 300px;
+    position: relative;
+
+}
+
+.regio-foto-kerk {
+    display: flex;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 30px 60px -30px;
+
+}
+.regio-outer-container-bgc{
+    background-color: var(--cl-bgc);
+}
+
+.regio-outer-container-1 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    /*box-shadow: 0 30px 60px -30px;*/
+
+
+}
+
+.regio-outer-container-2 {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 30px 60px -30px;
+
+}
+
+.regio-inner-container-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    margin: 100px 0 40px 500px;
+    padding: 40px 20px;
+    background-color: var(--cl-bgc-dark);
+    opacity: 0.95;
+
+
+}
+
+.regio-inner-container-2 {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 560px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+    flex-direction: column;
+    justify-content: center;
+    /*margin: 40px 20px;*/
+    padding: 40px 20px;
+    background-color: var(--cl-bgc);
+}
+
+.regio-h1-1 {
+    font-size: 60px;
+    margin: 0 20px;
+    padding: 0 20px;
+    /*background-color: var(--cl-bgc);*/
+}
+
+.regio-h2-1 {
+    font-size: 40px;
+    margin: 0 20px;
+    padding: 0 20px;
+}
+
+.regio-h2-2 {
+    font-size: 40px;
+    margin: 0 20px;
+    padding: 0 20px;
+}
+
+.regio-text-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 20px 40px;
+    font-family: var(--urbanist-);
+    color: var(--cl-txt);
+    font-size: 18px;
+    line-height: 30px;
+
+}
+
+.regio-ul-list-1 {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+    line-height: 30px;
+    color: var(--cl-txt);
+    font-family: var(--urbanist-);
+
+}
+
+.regio-li-items-1::before {
+    content: "\2022";
+    color: var(--cl-rood);
+    font-weight: bolder;
+    font-size: 50px;
+    display: inline-block;
+    flex-direction: row;
+    align-content: center;
+    width: 0.5em;
+    margin: 0 10px 0 0;
+
+}
+
+.regio-text-top5-1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: var(--cl-rood)
+}
+
+.regio-text-succes-1 {
+    margin: 0 40px;
+    font-size: 18px;
+}
+
+.regio-a-element {
+    font-size: 25px;
+    font-family: var(--urbanist-);
+    color: var(--cl-txt);
+}
+
+
+.regio-outer-container-2 {
+    display: flex;
+
+}
 
 
 
