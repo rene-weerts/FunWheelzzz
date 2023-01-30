@@ -57,17 +57,15 @@ const Footer = () => {
                             </li>
                         </div>
                         <div>
-
-                            <div className={styles['footer-social-media-container']}></div>
                             <div className={styles['footer-text-social-media']}>
                                 <h3>
                                     Social with us
                                 </h3>
                             </div>
                             <div className={styles['footer-social-media-icons']}>
-                                <a href=""> <img src={iconFacebook} alt="icon-facebook"/></a>
-                                <a href=""><img className={styles['footer-social-icon']} src={iconInstagram} alt="icon-instagram"/></a>
-                                <a href=""> <img src={iconTwitter} alt="icon-twitter"/></a>
+                                <a href="https://www.facebook.com/"> <img src={iconFacebook} alt="icon-facebook"/></a>
+                                <a href="https://www.instagram.com/"><img className={styles['footer-social-icon']} src={iconInstagram} alt="icon-instagram"/></a>
+                                <a href="https://twitter.com/?lang=en"> <img src={iconTwitter} alt="icon-twitter"/></a>
                             </div>
                         </div>
                     </div>

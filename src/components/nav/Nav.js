@@ -1,17 +1,14 @@
-import React, {useContext} from 'react';
-import styles from'./Nav.module.css';
-import {NavLink, useNavigate} from 'react-router-dom';
+import React from 'react';
+import styles from './Nav.module.css';
+import {NavLink} from 'react-router-dom';
+// import {useNavigate} from 'react-router-dom';
 import flag from '../../assets/Limburgse-vlag.png';
-import authContext from '../../context/AuthContext';
 
 const Nav = ({auth, setAuth}) => {
-    // const {isauth, logout} = useContext(authContext);
-    //
-    // function handleLogout() {
-    //     logout();
-    // }
 
-    const navigate = useNavigate();
+
+
+    // const navigate = useNavigate();
     const navLinkStyles = ({isActive}) => {
         return {
             fontWeight: isActive ? 'bolder' : 'normal',
@@ -19,12 +16,13 @@ const Nav = ({auth, setAuth}) => {
         };
     };
 
-    function handleRegister(e) {
-        e.preventDefault();
-        setAuth(true);
-        navigate('/register');
+    // function handleRegister(e) {
+    //     e.preventDefault();
+    //     setAuth(true);
+    //     navigate('/register');
+    // }
 
-    }
+
 
     return (
         <header>
@@ -37,62 +35,83 @@ const Nav = ({auth, setAuth}) => {
                     <div className={styles["img-vlag"]}>
                         <img src={flag} alt="Limburgse-vlag" width="45" height="25"/>
                     </div>
-
                 </div>
-
-
                 <ul className={styles["nav-container-ul"]}>
-
                     {auth && <NavLink
-                        className={({isActive}) => isActive ? 'active-menu-link' : 'default-menu-link'}
-                        to="/" style={navLinkStyles}>
-                        <p className={styles["nav-p-tag"]}>Home</p>
+                        to="/"
+                        style={navLinkStyles}>
+                        <p className={styles['nav-p-tag']}>
+                            Home
+                        </p>
                     </NavLink>}
 
                     {auth && <NavLink
-                        className={({isActive}) => isActive ? 'active-menu-link' : 'default-menu-link'}
-                        to="/top5" style={navLinkStyles}>
-                        <p className={styles["top5-color"]} >Top 5</p>
+                        to="/top5"
+                        style={navLinkStyles}>
+                        <p className={styles['top5-color']}>
+                            Top 5
+                        </p>
                     </NavLink>}
 
                     {auth && <NavLink
-                        className={({isActive}) => isActive ? 'active-menu-link' : 'default-menu-link'}
-                        to="/regio" style={navLinkStyles}>
-                        <p className={styles["nav-p-tag"]}>Regio</p>
+                        to="/regio"
+                        style={navLinkStyles}>
+                        <p className={styles['nav-p-tag']}>
+                            Regio
+                        </p>
                     </NavLink>}
 
+                    {auth && <NavLink
+                        to="/contact"
+                        style={navLinkStyles}>
+                        <p className={styles['nav-p-tag']}>
+                            Contact
+                        </p>
+                    </NavLink>}
 
-                    {auth &&
-                        <a className={styles["nav-a-tag"]} href="https://www.strava.com/login" target="blanc
-                        k">Strava</a>
-                    }
-
-
-                    {auth &&
-                        <a className={styles["nav-a-tag"]} href="#form-contact-link-bottom" >Contact</a>
-                    }
-                    {auth &&
-                        <NavLink to="login" onClick={() => {
+                    {auth && <NavLink
+                        to=""
+                        onClick={() => {
                             setAuth(false);
-                        }} style={navLinkStyles}><p className={styles["nav-p-tag"]}>Logout</p></NavLink>}
+                        }}
+                        style={navLinkStyles}>
 
-                    {!auth && <NavLink className="login-link" to="/login" onClick={() => {
-                        setAuth(true);
-                    }} style={navLinkStyles}><p className={styles["nav-p-tag"]}>Log in</p></NavLink>}
 
-                    {!auth && <NavLink className="register-link" to="/Register" onClick={() => {
-                        setAuth(true);
-                    }} style={navLinkStyles}><p className={styles["nav-p-tag"]}>Registreren</p></NavLink>}
+                        <p className={styles['nav-p-tag']}>
+                            Logout
+                        </p>
+                    </NavLink>}
 
+                    {!auth && <NavLink
+                        className="login-link"
+                        to="/login"
+                        onClick={() => {
+                            setAuth(true);
+                        }}
+                        style={navLinkStyles}>
+                        <p className={styles['nav-p-tag']}>
+                            Log in
+                        </p>
+                    </NavLink>}
+
+                    {!auth && <NavLink
+                        className="register-link"
+                        to="/Register"
+                        onClick={() => {
+                            setAuth(true);
+                        }}
+                        style={navLinkStyles}>
+                        <p className={styles['nav-p-tag']}>
+                            Registreren
+                        </p>
+                    </NavLink>}
 
                 </ul>
-
-
             </nav>
-
         </header>)
 
 };
+
 
 export default Nav;
 

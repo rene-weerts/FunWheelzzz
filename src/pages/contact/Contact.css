@@ -1,0 +1,86 @@
+.outer-container-picture-form-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    margin: 0px 20px 0 20px;
+}
+
+.picture-form {
+    width: 100%;
+}
+.outer-container-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 520px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: var(--cl-bgc);
+}
+
+.form-text-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.question-text-form {
+    font-size: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.form-text {
+    display: flex;
+    flex-direction: column;
+}
+
+::placeholder {
+    color: black;
+
+}
+
+#name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-family: var(--urbanist-);
+    line-height: 40px;
+    padding-left: 10px;
+    background-color: var(--cl-bgc);
+    opacity: 0.5;
+}
+#email {
+    font-family: var(--urbanist-);
+    line-height: 40px;
+    padding-left: 10px;
+    background-color: var(--cl-bgc);
+    opacity: 0.5;
+}
+
+#message {
+    font-family: var(--urbanist-);
+    line-height: 150px;
+    padding-left: 10px;
+    background-color: var(--cl-bgc);
+    opacity: 0.5;
+}
+
+.button-div {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.button-form {
+    width: 150px;
+    height: 45px;
+    opacity: 0.7;
+    text-transform: uppercase;
+    border-radius: 15px;
+
+}
+

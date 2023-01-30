@@ -1,10 +1,4 @@
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 .nav-default {
     display: flex;
     justify-content: space-between;
@@ -12,15 +6,12 @@
     width: 100%;
     height: 80px;
     background-color: var(--cl-bgc);
-
 }
 .nav-outer-container-wheelzzz{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: baseline;
-
-
 }
 .nav-container-name-wheelzzz {
     display: flex;
@@ -31,16 +22,11 @@
     padding-left: 24px;
     font-size: xxx-large;
     color: var(--cl-rood);
-
 }
-
 .img-vlag {
     margin-left: 30px;
     margin-top: 13px;
-
 }
-
-
 .nav-container-ul{
     display: flex;
     flex-direction: row;
@@ -50,18 +36,14 @@
     align-items: center;
     margin-left: 100px;
     margin-right: 24px;
-
 }
 .nav-a-tag {
     text-transform: uppercase;
     text-decoration: -webkit-activelink none;
-
 }
-
 .top5-color {
     font-size: 25px;
     color: var(--cl-rood);
-
 }
 .nav-p-tag{
     text-transform: uppercase;

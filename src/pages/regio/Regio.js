@@ -1,24 +1,18 @@
 import React from 'react';
 import './Regio.css';
 import fotoZuidLimburg from '../../assets/foto-zuid-limburg.jpg';
+import pictureRepair from '../../assets/picture-repair.jpeg';
 
 const Regio = () => {
     return (
         <>
-
-
             <main className="regio-main-outer-container">
 
                 <div className="regio-outer-container-1">
-                    <img className="regio-foto-kerk" src={fotoZuidLimburg} alt="foto-regio-pagina-kerk"/>
-                    <div className="regio-outer-container-bgc">
-
-
-                    </div>
+                    <img className="regio-foto-kerk" src={fotoZuidLimburg} alt="kerk"/>
                     <div className="regio-inner-container-1">
-
                         <h1 className="regio-h1-1">
-                            De Regio
+                            De Regio...
                         </h1>
                         <p className="regio-text-1">
                             Hier vind u een overzicht van de informatie die wij voor u verzamelt hebben.<br/>
@@ -49,15 +43,15 @@ const Regio = () => {
                             </li>
                         </ul>
                         <p className="regio-text-1">
-                            Om uw keuze nog te vergroten kunt u gebruik maken van bovenstaande link visit Zuid-Limburg.
+                            Mocht uw keuze er niet tussen staan kunt u gebruik maken van Visit Zuid-Limburg.
                         </p>
                         <p className="regio-text-succes-1">Succes met het maken van uw keuzes en veel
                             plezier...</p>
                     </div>
                 </div>
 
-                <div className="regio-outer-container-2">
-                    <div className="regio-inner-container-2">
+                <section className="regio-container-info-blok">
+                    <div className="regio-outer-container-2">
                         <h2 className="regio-h2-1">
                             De leukste terrassen
                         </h2>
@@ -88,15 +82,11 @@ const Regio = () => {
                                 <a className="regio-a-element" href="https://www.geulhof.nl/"
                                    target="blank">Geulhof.</a>
                             </li>
-
                         </ul>
                     </div>
-                </div>
 
-
-                <div className="regio-outer-container-1">
-                    <div className="regio-inner-container-1">
-                        <h2 className="regio-h1-1">
+                    <div className="regio-outer-container-2">
+                        <h2 className="regio-h2-1">
                             De mooiste evenementen.
                         </h2>
                         <ul className="regio-ul-list-1">
@@ -119,17 +109,11 @@ const Regio = () => {
                                 <a className="regio-a-element" href="https://www.mh2d.nl/" target="blank">Limburgs
                                     Mooiste.</a>
                             </li>
-
-
                         </ul>
-
                     </div>
-                </div>
 
-
-                <div className="regio-outer-container-2">
-                    <div className="regio-inner-container-2">
-                        <h1 className="regio-h1-1">
+                    <div className="regio-outer-container-2">
+                        <h1 className="regio-h2-1">
                             De beste restaurants
                         </h1>
                         <ul className="regio-ul-list-1">
@@ -161,16 +145,11 @@ const Regio = () => {
                                    href="https://www.chateauwittem.com/restaurants-bar/haute-cuisine-julemont/"
                                    target="blank">Chateau Wittem.</a>
                             </li>
-
-
                         </ul>
                     </div>
-                </div>
 
-
-                <div className="regio-outer-container-1">
-                    <div className="regio-inner-container-1">
-                        <h1 className="regio-h1-1">
+                    <div className="regio-outer-container-2">
+                        <h1 className="regio-h2-1">
                             De mooiste hotels en B&B's.
                         </h1>
                         <ul className="regio-ul-list-1">
@@ -202,17 +181,11 @@ const Regio = () => {
                                 <a className="regio-a-element" href="https://www.herbergsintbrigida.nl/" target="blank">Herberg
                                     Sint Brigida.</a>
                             </li>
-
-
                         </ul>
-
                     </div>
-                </div>
 
-
-                <div className="regio-outer-container-2">
-                    <div className="regio-inner-container-2">
-                        <h1 className="regio-h1-1">
+                    <div className="regio-outer-container-2">
+                        <h1 className="regio-h2-1">
                             De beste speciaal zaken.
                         </h1>
                         <ul className="regio-ul-list-1">
@@ -235,16 +208,48 @@ const Regio = () => {
                                 <a className="regio-a-element" href="https://www.valkbike.nl/" target="blank">ValkBike
                                     verhuur.</a>
                             </li>
-
-
                         </ul>
                     </div>
-                </div>
 
+                    <div className="regio-outer-container-2">
+                        <h1 className="regio-h2-1">
+                            De lijst van VVV's.
+                        </h1>
+                        <ul className="regio-ul-list-1">
+                            <li className="regio-li-items-1">
+                                <a className="regio-a-element" href="https://www.visitzuidlimburg.nl/" target="blank">Visit
+                                    Zuid-Limburg.</a>
+                            </li>
+                            <li className="regio-li-items-1">
+                                <a className="regio-a-element" href="https://www.bezoekmaastricht.nl/" target="blank">Bezoek
+                                    Maastricht.</a>
+                            </li>
+                            <li className="regio-li-items-1">
+                                <a className="regio-a-element" href="https://www.vvvsittard-geleen.nl/" target="blank">VVV
+                                    Sittard-Geleen.</a>
+                            </li>
+                            <li className="regio-li-items-1">
+                                <a className="regio-a-element" href="https://www.bezoekbrunssum.nl/" target="blank">Bezoek
+                                    Brunssum.</a>
+                            </li>
+                            <li className="regio-li-items-1">
+                                <a className="regio-a-element" href="https://www.toerismevaals.nl/vvv-info/"
+                                   target="blank">VVV Vaals.</a>
+                            </li>
+                            <li className="regio-li-items-1">
+                                <a className="regio-a-element"
+                                   href="https://www.visitzuidlimburg.nl/omgeving/plaatsen/detail/margraten/84/"
+                                   target="blank">VVV Margraten.</a>
+                            </li>
+                        </ul>
+                    </div>
 
+                </section>
                 <div className="regio-outer-container-1">
+                    <img className="regio-picture-repair" src={pictureRepair} alt="repair"/>
+
                     <div className="regio-inner-container-1">
-                        <h1 className="regio-h1-1">
+                        <h1 className="regio-h2-1">
                             De beste hulp bij technische problemen.
                         </h1>
                         <ul className="regio-ul-list-1">
@@ -256,33 +261,10 @@ const Regio = () => {
                                 <a className="regio-a-element" href="/https://www.fietsned-zuidlimburg.nl"
                                    target="blank">L Walstock fietsNed.</a>
                             </li>
-
-
-                        </ul>
-
-                    </div>
-                </div>
-
-
-                <div className="regio-outer-container-2">
-                    <div className="regio-inner-container-2">
-                        <h1 className="regio-h1-1">
-                            De lijst van VVV's.
-                        </h1>
-                        <ul className="regio-ul-list-1">
-                            <li className="regio-li-items-1">
-                                De leukste terrassen.
-                            </li>
-
-
                         </ul>
                     </div>
                 </div>
-
-
             </main>
-
-
         </>
 
     );

@@ -4,8 +4,7 @@
     justify-content: center;
     height: 100vh;
     padding-bottom: 225px;
-    background: rgb(153,2,120);
-    background: radial-gradient(circle, rgba(153,2,120,1) 0%, rgba(140,140,140,1) 100%);
+    background: var(--clbgc-radial);
 }
 
 .login-inner-container {

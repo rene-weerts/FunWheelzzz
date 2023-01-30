@@ -1,19 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&family=Urbanist&display=swap');
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+
 }
 
 :root {
-    --amaranth-: 'Amaranth', sans-serif;
-    --urbanist-: 'Urbanist', sans-serif;
-    --cl-zwart:#26211e;
-    --cl-txt: #302a27;
-    --cl-rood: #990278;
-    --cl-bgc: rgba(140, 140, 140, 0.72);
-    --cl-bgc-dark: rgba(140,140,140, 1);
+
 }
 
 h1 {
@@ -65,6 +56,7 @@ a {
 .img-main {
     display: flex;
     width: 100%;
+    box-shadow: 0 30px 60px -30px;
 }
 
 .header-outer-container {
@@ -73,7 +65,7 @@ a {
     margin: 0 20px;
     position: relative;
     justify-content: center;
-    box-shadow: 0 30px 60px -30px;
+
 
 }
 
@@ -84,7 +76,7 @@ a {
     align-self: center;
     justify-content: center;
     align-items: center;
-    margin: 300px 700px 300px 20px;
+    margin: 300px 700px 400px 20px;
     background-color: var(--cl-bgc);
 
 }

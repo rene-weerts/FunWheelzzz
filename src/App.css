@@ -1,5 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&family=Urbanist&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    --amaranth-: 'Amaranth', sans-serif;
+    --urbanist-: 'Urbanist', sans-serif;
+    --cl-zwart:#26211e;
+    --cl-txt: #302a27;
+    --cl-rood: #990278;
+    --cl-bgc: rgba(140, 140, 140, 0.72);
+    --cl-bgc-dark: rgba(140,140,140, 1);
+    --clbgc-linear: linear-gradient(153deg, rgba(153, 2, 120, 1) 0%, rgba(140, 140, 140, 1) 100%);
+    --clbgc-radial: radial-gradient(circle, rgba(153,2,120,1) 0%, rgba(140,140,140,1) 100%);
+
+
 }

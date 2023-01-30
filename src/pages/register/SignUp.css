@@ -4,8 +4,7 @@
     justify-content: center;
     height: 100vh;
     padding-bottom: 150px;
-    background: rgb(153, 2, 120);
-    background: linear-gradient(153deg, rgba(153, 2, 120, 1) 0%, rgba(140, 140, 140, 1) 100%);
+    background: var(--clbgc-linear);
 }
 
 .register-inner-container {
@@ -46,7 +45,7 @@
 ::placeholder{
     color:black;
 }
-#email {
+#username{
     line-height: 40px;
     padding-left: 20px;
     align-self: stretch;
@@ -54,7 +53,15 @@
     opacity: 0.5;
 }
 
-#psw {
+#email {
+    line-height: 40px;
+    padding-left: 20px;
+    align-self: stretch;
+    background-color: var(--cl-bgc), initial;
+    opacity: 0.5;
+}
+
+#password {
     line-height: 40px;
     padding-left: 20px;
     align-self: stretch;
@@ -63,7 +70,7 @@
     opacity: 0.5;
 }
 
-#psw-repeat {
+#repeatPassword {
     line-height: 40px;
     padding-left: 20px;
     align-self: stretch;
@@ -76,7 +83,7 @@
     display: flex;
     justify-content: center;
     align-self: stretch;
-margin-top: 30px;
+    margin-top: 30px;
 }
 
 .register-button {
@@ -87,6 +94,10 @@ margin-top: 30px;
     text-transform: uppercase;
     border-radius: 15px;
     margin-bottom: 20px;
+
+}
+
+.container-sign-in {
 
 }
 

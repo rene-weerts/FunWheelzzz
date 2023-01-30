@@ -4,7 +4,7 @@
 // import axios from 'axios';
 //
 // export const AuthContext = createContext({});
-
+//
 //
 // function AuthContextProvider({children}) {
 //
@@ -13,7 +13,7 @@
 //             isAuth: false,
 //             user: null
 //         });
-// //
+//
 //     const navigate = useNavigate();
 //
 //     function login(jwt) {
@@ -25,7 +25,7 @@
 //
 //         async function fetchUserData() {
 //             try {
-//                 // const response = await axios.get(`https://localhost:3000/600/users/${decodedToken.sub}`, headers:{
+//                 const response = await axios.get(`https://localhost:3000/600/users/${decodedToken.sub}`, config:{ headers:{
 //                     "Content-Type":'application/json',
 //                         Authorization:`Bearer${jwt}`
 //
@@ -58,7 +58,7 @@
 //
 // function logout() {
 //     console.log('de gebruiker is uitgelogd');
-//     localStorage.clear();
+//     localStorage.removeItem("token");
 //     setAuth({
 //         isAuth: false,
 //         user: null

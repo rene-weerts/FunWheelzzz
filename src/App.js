@@ -1,5 +1,5 @@
 import './App.css';
-import React, {useContext, useState} from 'react';
+import React, {useState} from 'react';
 import {Navigate, Route, Routes} from 'react-router-dom';
 import Nav from './components/nav/Nav';
 import Home from './pages/home/Home';
@@ -12,42 +12,29 @@ import NotFound from './pages/not found/NotFound';
 import Footer from './components/footer/Footer';
 import Regio from './pages/regio/Regio';
 import Profile from './pages/profile/Profile';
-
+import PrivacyVerklaring from "./pages/privacy verklaring/PrivacyVerklaring";
+require ("dotenv").config()
+// import LogOut from './components/logout/LogOut';
 function App() {
 
     const [auth, setAuth] = useState(false);
-    // const {isAuth} = useContext(authContext);
 
-    // useEffect(() => {
-    //     async function fetchData() {
-    //         try {
-    //             const response = await axios.get('', {
-    //                 params: {
-    //                     api_key: process.env.REACT_API_KEY
-    //                 }
-    //             });
-    //         } catch (e) {
-    //
-    //         }
-    //     }
-    //
-    //     fetchData();
-    // }, []);
 
     return (<>
 
-        <Nav auth={auth} setAuth={setAuth}/>
-
-        <Routes>
-            <Route path="/" element={<Home/>}/>
-            <Route path="/register" element={<Register/>}/>
-            <Route path="/login" element={<Login/>}/>
-            <Route path="/top5" element={<Top5/>}/>
-            <Route path="*" element={<NotFound/>}/>
-            <Route path="/memoryLeak" element={<MemoryLeak/>}/>
-            <Route path="/contact" element={<Contact/>}/>
-            <Route path="/regio" element={<Regio/>}/>
-            <Route path="/profile" element={auth ? <Profile/> : <Navigate to="/"/>}/>
+            <Nav auth={auth} setAuth={setAuth}/>
+            <Routes>
+                <Route path="/register" element={<Register/>}/>
+                <Route path="/login" element={<Login/>}/>
+                {/*<Route path="/logout" element={<LogOut/>}/>*/}
+                <Route path="/" element={<Home/>}/>
+                <Route path="/top5" element={<Top5/>}/>
+                <Route path="/memoryLeak" element={<MemoryLeak/>}/>
+                <Route path="/contact" element={<Contact/>}/>
+                <Route path="/regio" element={<Regio/>}/>
+                <Route path="/privacyVerklaring" element={<PrivacyVerklaring/>}/>
+                {/*<Route path="/profile" element={auth ? <Profile/> : <Navigate to="/"/>}/>*/}
+                <Route path="*" element={<NotFound/>}/>
         </Routes>
         <Footer/>
 

@@ -15,7 +15,7 @@ const Home = () => {
     return (<>
             <header className="header-outer-container" id="home-header">
 
-                <img className="img-header" src={fotoHeader} alt="foto-header"/>
+                <img className="img-header" src={fotoHeader} alt="header"/>
 
                 <div className="header-text-outer-container">
                     <div className="header-text-inner-container">
@@ -32,7 +32,7 @@ const Home = () => {
                             <div className="home-container-text1-top5">
                                 <p className="home-text1-top5">Top 5</p>
                             </div>
-                            <img className="img-main" src={fotoMain} alt="foto-main"/>
+                            <img className="img-main" src={fotoMain} alt="main"/>
                             <div className="main-inner-container-text-top5">
                                 <div className="text-2-top5">
                                     <h3>Maak een Top 5<br/> van de zonnigste en droogste routes naar plaats van uw keuze
@@ -49,7 +49,7 @@ const Home = () => {
                                 <h3 className="text-terras">een terrasje pikken..</h3>
                             </div>
                             <div>
-                                <img className="picture-terras" src={fotoTerras} alt="picture-terras"/>
+                                <img className="picture-terras" src={fotoTerras} alt="terras"/>
                             </div>
                         </div>
                     </article>
@@ -58,7 +58,7 @@ const Home = () => {
                         <div className="element-relative">
                             <article>
                                 <div className="region-container-bakery">
-                                    <img className="picture-bakery" src={fotoBakkerij} alt="picture-bakery"/>
+                                    <img className="picture-bakery" src={fotoBakkerij} alt="bakery"/>
                                     <h3 className="text-bakery">..een bezoekje aan de beste bakker van de
                                         streek..</h3>
                                 </div>
@@ -67,7 +67,7 @@ const Home = () => {
                         <div className="element-absolute">
                             <article>
                                 <div className="region-container-food-basilica">
-                                    <img className="picture-food-basilica" src={fotoBasilica} alt="picture-food-basilica"/>
+                                    <img className="picture-food-basilica" src={fotoBasilica} alt="food-basilica"/>
                                     <h3 className="text-food-basilica">..gastronomisch keuzes te over..</h3>
                                 </div>
                             </article>
@@ -76,7 +76,7 @@ const Home = () => {
                     </div>
                     <article>
                         <div className="region-container-hotel">
-                            <img className="picture-hotel" src={fotoAccommodatie} alt="picture-hotel"/>
+                            <img className="picture-hotel" src={fotoAccommodatie} alt="hotel"/>
                             <h3 className="text-hotel">..een verblijf in één van de prachtige accommodaties die
                                 typisch zijn voor deze streek..u vind het allemaal op onze Regio pagina bovenaan..
                             </h3>
@@ -86,7 +86,7 @@ const Home = () => {
                 </main>
             </section>
             <div className="outer-container-picture-form">
-                <img className="picture-form" src={fotoContactForm} alt="picture-contact-form"/>
+                <img className="picture-form" src={fotoContactForm} alt="contact-form"/>
 
                 <div className="outer-container-form">
                     <div className="form-text-top">
@@ -94,6 +94,7 @@ const Home = () => {
                         <h3>Wij horen graag van u...</h3>
                     </div>
                     <div id="form-contact-link-bottom" className="form-text">
+                    {/*    <div  className="form-text">*/}
                         <label htmlFor="name"><p>Naam</p></label>
                         <input placeholder="Name" id="name"/>
                         <label htmlFor="email"><p>Email</p></label>
@@ -101,13 +102,10 @@ const Home = () => {
                         <label htmlFor="message"><p>Bericht</p></label>
                         <input placeholder="Message" id="message"/>
                         <div className="button-div">
-                            {/*<button className="button-form" type="submit"><p>Verstuur</p></button>*/}
                             <Button/>
                         </div>
                     </div>
-
                 </div>
-
             </div>
 
 
