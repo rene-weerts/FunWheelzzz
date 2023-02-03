@@ -1,10 +1,13 @@
 import React, {useEffect} from 'react';
 import {useNavigate} from 'react-router-dom';
 
-const NotFound = (props) => {
+const NotFound = () => {
     const navigate = useNavigate();
+
     useEffect(()=>{
-        setTimeout(()=>{},2000)
+        setTimeout(()=>{
+            navigate(-1)
+        },2000)
         navigate("/")
     },[])
 

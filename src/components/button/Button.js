@@ -2,10 +2,10 @@ import React from 'react';
 import styles from './Button.module.css';
 
 
-function Button() {
+function Button({type}) {
     return (
         <>
-            <button type="submit" className={styles['container']}>
+            <button type={type} className={styles['container']}>
                 <i className={styles['button-i']}>
                 </i>
                 <span className={styles['default-button']}>

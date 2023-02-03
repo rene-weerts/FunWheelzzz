@@ -2,8 +2,10 @@ import React from 'react';
 import './Contact.css';
 import fotoContactForm from '../../assets/achtergrond-contact-formulier.jpg';
 import Button from '../../components/button/Button';
+// import {AuthContext} from '../../context/AuthContext';
 
 const Contact = () => {
+    // const {auth, setAuth} = useContext(AuthContext);
     return (
         <>
             <div className="outer-container-picture-form-contact">

@@ -52,6 +52,7 @@ const RadioButtonComponent = () => {
 };
 const RadioButton = ({label, value, onChange, weather}) => {
     let checked = weather === value;
+    console.log(checked);
     return (
         <label className={styles["top5-label-radio"]}>
             <input className={styles["top5-input-radio"]}

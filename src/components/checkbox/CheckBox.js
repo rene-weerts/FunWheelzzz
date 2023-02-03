@@ -7,7 +7,8 @@ const CheckBox = ({labelText}) => {
     const [labelTextArray, setLabelTextArray] = useState([]);
     const labelTextElements = labelTextArray.map((text, index) => <p key={index}>{text}</p>);
     const allLabelTextElements = React.Children.map(labelTextElements, child => child.props.children);
-    // console.log(allLabelTextElements);
+    console.log(isChecked);
+    console.log(allLabelTextElements);
 
     const handleCheckboxChange = event => {
         setIsChecked(event.target.checked);

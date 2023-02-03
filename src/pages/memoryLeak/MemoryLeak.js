@@ -11,7 +11,7 @@ const MemoryLeak = () => {
 
     return (<>
             <div>
-                <h1>Memoryleak</h1>
+                <h1>There seems to be a memory leak.....</h1>
 
             </div>
         </>

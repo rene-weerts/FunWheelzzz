@@ -7,8 +7,10 @@ import Button from '../../components/button/Button';
 import RadioButton from '../../components/radiobutton/RadioButton';
 import CheckBox from '../../components/checkbox/CheckBox';
 import InputFieldTop5Component from '../../components/inputfieldTop5/InputFieldTop5';
+// import {AuthContext} from '../../context/AuthContext';
 
 function Top5() {
+    // const {auth, setAuth} = useContext(AuthContext);
 
 
 //     // const BASE_URI = api.openWeatherMap.org / data / 2.5 / weather ? q =`${cityString}`uk & APPID =${apiKey}

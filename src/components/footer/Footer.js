@@ -1,26 +1,10 @@
 import React from 'react';
 import styles from './Footer.module.css';
-import {useNavigate} from 'react-router-dom';
 import iconTwitter from '../../assets/twitter.png';
 import iconFacebook from '../../assets/facebook.png';
 import iconInstagram from '../../assets/instagram.png';
 
 const Footer = () => {
-    const navigate = useNavigate();
-    // const {Auth} = useContext(AuthContext);
-    const navLinkStyles = ({isActive}) => {
-        return {
-            fontWeight: isActive ? 'bolder' : 'normal',
-            textDecoration: isActive ? 'underline dashed var(--cl-rood' : 'none',
-        };
-    };
-
-    // function handleRegister(e) {
-    //     e.preventDefault();
-    //     setAuth(true);
-    //     navigate('/register');
-    //
-    // }
 
     return (
 
@@ -33,11 +17,11 @@ const Footer = () => {
                     <div className={styles["footer-container-1"]}>
                         <ul>
                             <li className={'footer-list-items'}>
-                                <a href="#home-header" className={styles['footer-a-tag']}><p
+                                <a href="/home-header" className={styles['footer-a-tag']}><p
                                     className={styles['footer-p-tag']}>Home</p></a>
                             </li>
                             <li className={'footer-list-items'}>
-                                <a href="regio" className={styles['footer-a-tag']}><p
+                                <a href="/regio" className={styles['footer-a-tag']}><p
                                     className={styles['footer-p-tag']}>Regio</p></a>
                             </li>
 

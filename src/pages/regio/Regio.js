@@ -2,8 +2,10 @@ import React from 'react';
 import './Regio.css';
 import fotoZuidLimburg from '../../assets/foto-zuid-limburg.jpg';
 import pictureRepair from '../../assets/picture-repair.jpeg';
+// import {AuthContext} from '../../context/AuthContext';
 
 const Regio = () => {
+    // const {auth, setAuth} = useContext(AuthContext);
     return (
         <>
             <main className="regio-main-outer-container">

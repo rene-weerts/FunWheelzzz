@@ -1,14 +1,11 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import styles from './Nav.module.css';
 import {NavLink} from 'react-router-dom';
-// import {useNavigate} from 'react-router-dom';
 import flag from '../../assets/Limburgse-vlag.png';
+import {AuthContext} from '../../context/AuthContext';
+const Nav = () => {
+    const {auth, setAuth} = useContext(AuthContext);
 
-const Nav = ({auth, setAuth}) => {
-
-
-
-    // const navigate = useNavigate();
     const navLinkStyles = ({isActive}) => {
         return {
             fontWeight: isActive ? 'bolder' : 'normal',
@@ -16,17 +13,8 @@ const Nav = ({auth, setAuth}) => {
         };
     };
 
-    // function handleRegister(e) {
-    //     e.preventDefault();
-    //     setAuth(true);
-    //     navigate('/register');
-    // }
-
-
-
     return (
         <header>
-
             <nav className={styles["nav-default"]}>
                 <div className={styles["nav-outer-container-wheelzzz"]} id="header-home">
                     <div>
@@ -37,6 +25,7 @@ const Nav = ({auth, setAuth}) => {
                     </div>
                 </div>
                 <ul className={styles["nav-container-ul"]}>
+
                     {auth && <NavLink
                         to="/"
                         style={navLinkStyles}>
@@ -70,15 +59,10 @@ const Nav = ({auth, setAuth}) => {
                     </NavLink>}
 
                     {auth && <NavLink
-                        to=""
-                        onClick={() => {
-                            setAuth(false);
-                        }}
+                        to="/home"
                         style={navLinkStyles}>
-
-
                         <p className={styles['nav-p-tag']}>
-                            Logout
+                            Logou
                         </p>
                     </NavLink>}
 
@@ -96,7 +80,7 @@ const Nav = ({auth, setAuth}) => {
 
                     {!auth && <NavLink
                         className="register-link"
-                        to="/Register"
+                        to="/register"
                         onClick={() => {
                             setAuth(true);
                         }}
@@ -108,10 +92,8 @@ const Nav = ({auth, setAuth}) => {
 
                 </ul>
             </nav>
-        </header>)
-
-};
-
-
+        </header>
+    );
+}
 export default Nav;
 

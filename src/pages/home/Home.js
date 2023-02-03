@@ -8,7 +8,6 @@ import fotoBasilica from '../../assets/foto-eten-basilica.jpeg';
 import fotoAccommodatie from '../../assets/foto-accommodatie.jpg';
 import fotoContactForm from '../../assets/achtergrond-contact-formulier.jpg';
 import Button from '../../components/button/Button';
-
 const Home = () => {
 
 
