@@ -5,6 +5,21 @@ import axios from 'axios';
 // import {useForm} from 'react-hook-form';
 
 
+    const headers = {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${jwt}`
+    }
+                const response = await axios.get(`https://frontend-educational-backend.herokuapp.com/api/user/${headers}`)
+// import React, {useContext} from 'react';
+// import {AuthContext} from '../../context/AuthContext';
+ // const {auth, setAuth} = useContext(AuthContext);
+
+
+  style={navLinkStyles}
+
+
+
+
 const Register = () => {
     const [error, setError] = useState(false);
     const [username, setUsername] = useState('');

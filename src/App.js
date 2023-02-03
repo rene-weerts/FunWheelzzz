@@ -1,5 +1,3 @@
-
-
 import './App.module.css';
 import React, {useContext, useState} from 'react';
 import {Navigate, Route, Routes} from 'react-router-dom';
@@ -18,6 +16,7 @@ import Profile from './pages/profile/Profile';
 import LogOut from './pages/logout/LogOut';
 import {AuthContext} from './context/AuthContext';
 require('dotenv').config();
+
 function App() {
     const {isAuth} = useContext(AuthContext);
     const [auth, setAuth] = useState(false);

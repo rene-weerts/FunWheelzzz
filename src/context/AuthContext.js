@@ -14,22 +14,6 @@ function AuthContextProvider({children}) {
             status: 'pending'
         });
 
-    useEffect(() => {
-
-        const storedToken = localStorage.getItem('token');
-        if (storedToken) {
-            console.log(storedToken);
-            void fetchUserData(storedToken);
-        } else {
-
-            setAuth({
-                ...auth,
-                isAuth: false,
-                user: null,
-                status: 'done'
-            });
-        }
-    }, []);
     function login(jwt,id) {
         console.log('de gebruiker is ingelogd');
         console.log(jwt);
@@ -38,14 +22,24 @@ function AuthContextProvider({children}) {
         void fetchUserData(jwt, id)
     }
 
+    function logout() {
+        console.log('de gebruiker is uitgelogd');
+        localStorage.removeItem('token');
+        setAuth({
+            ...auth,
+            isAuth: false,
+            user: null,
+        });
+        navigate('/login');
+    }
 
-    async function fetchUserData(jwt,id,redirect ) {
+    async function fetchUserData(jwt,redirect ) {
         try {
-            const response = await axios.get(`https://frontend-educational-backend.herokuapp.com/api/${id}`,
+            const response = await axios.get(`https://frontend-educational-backend.herokuapp.com/api/user`,
                 { headers: {
                 "Content-Type": "application/json",
                         Authorization: `Bearer ${jwt}`,
-        }});
+        }})
 
             setAuth({
                 ...auth,
@@ -55,6 +49,7 @@ function AuthContextProvider({children}) {
                     id: response.data.id,
                     username: response.data.username
                 },
+                ...auth,
                 status: 'done'
             });
             if (redirect) {
@@ -71,18 +66,22 @@ function AuthContextProvider({children}) {
         }
     }
 
+    useEffect(() => {
 
+        const storedToken = localStorage.getItem('token');
+        if (storedToken) {
+            console.log(storedToken);
+            void fetchUserData(storedToken);
+        } else {
 
-    function logout() {
-        console.log('de gebruiker is uitgelogd');
-        localStorage.removeItem('token');
-        setAuth({
-            ...auth,
-            isAuth: false,
-            user: null,
-        });
-        navigate('/home');
-    }
+            setAuth({
+                ...auth,
+                isAuth: false,
+                user: null,
+                status: 'done'
+            });
+        }
+    }, []);
 
 
         const contextData = {

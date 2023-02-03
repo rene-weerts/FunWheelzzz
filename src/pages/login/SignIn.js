@@ -9,32 +9,26 @@ const login = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const {login} = useContext(AuthContext);
- 
 
+    async function handleLogin(e) {
+        e.preventDefault();
 
-        async function handleLogin(e) {
-            e.preventDefault();
+        try {
+            const response = await axios.post('https://frontend-educational-backend.herokuapp.com/api/auth/signin', {
+                username: username,
+                password: password,
 
-            try {
-                const response = await axios.post('https://frontend-educational-backend.herokuapp.com/api/auth/signin', {
-                    username: username,
-                    password: password,
+            });
+            login(response.data.accessToken);
+            console.log(response.data.accessToken);
 
-                });
-                login(response.data.accessToken,response.data.id);
-                console.log(response.accessToken);
-                console.log(response.data.id);
-
-
-            } catch (err) {
-                console.log(err.response.data );
-
-            }
+        } catch (err) {
+            console.log(err.response.data);
         }
+    }
 
         return (
             <>
-
                 <form onSubmit={handleLogin}>
                     <div className="login-outer-container-background">
                         <div className="login-inner-container">
@@ -83,11 +77,7 @@ const login = () => {
                 </form>
 
             </>
-
-
         );
-
-
 
 }
 export default login;

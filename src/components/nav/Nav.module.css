@@ -37,10 +37,6 @@
     margin-left: 100px;
     margin-right: 24px;
 }
-.nav-a-tag {
-    text-transform: uppercase;
-    text-decoration: -webkit-activelink none;
-}
 .top5-color {
     font-size: 25px;
     color: var(--cl-rood);
