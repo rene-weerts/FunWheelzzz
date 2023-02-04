@@ -6,15 +6,15 @@ const NotFound = () => {
 
     useEffect(()=>{
         setTimeout(()=>{
-            navigate(-1)
-        },2000)
+            // navigate(-1)
+        },3000)
         navigate("/")
     },[])
 
 return (
     <div>
         <h1>Page Not Found : 404</h1>
-        <p>You will be redirected in 2 sec</p>
+        <p>You will be redirected in 3 sec</p>
     </div>
 );
 }

@@ -30,7 +30,7 @@ function AuthContextProvider({children}) {
             isAuth: false,
             user: null,
         });
-        navigate('/login');
+        navigate('/home');
     }
 
     async function fetchUserData(jwt,redirect ) {
@@ -49,7 +49,7 @@ function AuthContextProvider({children}) {
                     id: response.data.id,
                     username: response.data.username
                 },
-                ...auth,
+
                 status: 'done'
             });
             if (redirect) {
