@@ -23,25 +23,25 @@ const Regio = () => {
                         </p>
                         <ul className="regio-ul-list-1">
                             <li className="regio-li-items-1">
-                                De leukste terrassen.
+                                De leukste terrassen
                             </li>
                             <li className="regio-li-items-1">
-                                De mooiste evenementen.
+                                De mooiste evenementen
                             </li>
                             <li className="regio-li-items-1">
-                                De beste restaurants.
+                                De beste restaurants
                             </li>
                             <li className="regio-li-items-1">
-                                De mooiste hotels en B&B's.
+                                De mooiste hotels en B&B's
                             </li>
                             <li className="regio-li-items-1">
-                                De beste speciaal zaken.
+                                De beste speciaal zaken
                             </li>
                             <li className="regio-li-items-1">
-                                De beste hulp bij technische problemen.
+                                De beste hulp bij technische problemen
                             </li>
                             <li className="regio-li-items-1">
-                                Visit Zuid-Limburg.
+                                Visit Zuid-Limburg
                             </li>
                         </ul>
                         <p className="regio-text-1">
@@ -61,55 +61,55 @@ const Regio = () => {
                             <li className="regio-li-items-1">
                                 <a className="regio-a-element"
                                    href="https://www.aontbat.nl/?utm_source=visitzuidlimburg.nl&utm_medium=referral"
-                                   target="blank">Aon 't bat.</a>
+                                   target="blank">Aon 't bat</a>
                             </li>
                             <li className="regio-li-items-1">
                                 <a className="regio-a-element"
                                    href="https://www.heerdeberg.nl/?utm_source=visitzuidlimburg.nl&utm_medium=referral"
-                                   target="blank">Landgoed Heerdeberg.</a>
+                                   target="blank">Landgoed Heerdeberg</a>
                             </li>
                             <li className="regio-li-items-1">
                                 <a className="regio-a-element" href="https://noonmaastricht.nl/"
-                                   target="blank">Noon.</a>
+                                   target="blank">Noon</a>
                             </li>
                             <li className="regio-li-items-1">
                                 <a className="regio-a-element" href="https://gerardushoeve.nl/"
-                                   target="blank">Gerardushoeve.</a>
+                                   target="blank">Gerardushoeve</a>
                             </li>
                             <li className="regio-li-items-1">
                                 <a className="regio-a-element" href="https://www.boscafe.nl/home/" target="blank">Boscafe
-                                    't hijgend hert.</a>
+                                    't Hijgend Hert</a>
                             </li>
                             <li className="regio-li-items-1">
                                 <a className="regio-a-element" href="https://www.geulhof.nl/"
-                                   target="blank">Geulhof.</a>
+                                   target="blank">Geulhof</a>
                             </li>
                         </ul>
                     </div>
 
                     <div className="regio-outer-container-2">
                         <h2 className="regio-h2-1">
-                            De mooiste evenementen.
+                            De mooiste evenementen
                         </h2>
                         <ul className="regio-ul-list-1">
                             <li className="regio-li-items-1">
                                 <a className="regio-a-element" href="https://www.andrerieu.com/nl" target="blank">André
-                                    Rieu.</a>
+                                    Rieu</a>
                             </li>
                             <li className="regio-li-items-1">
                                 <a className="regio-a-element" href="https://preuvenemint.nl/"
-                                   target="blank">Preuvenemint.</a>
+                                   target="blank">Preuvenemint</a>
                             </li>
                             <li className="regio-li-items-1">
                                 <a className="regio-a-element" href="amstel.nl/amstelgoldrace/toerversie"
-                                   target="blank">Amstel Gold.</a>
+                                   target="blank">Amstel Gold</a>
                             </li>
                             <li className="regio-li-items-1">
-                                <a className="regio-a-element" href="https://www.mh2d.nl/" target="blank">Mh2d.</a>
+                                <a className="regio-a-element" href="https://www.mh2d.nl/" target="blank">Mh2d</a>
                             </li>
                             <li className="regio-li-items-1">
                                 <a className="regio-a-element" href="https://www.mh2d.nl/" target="blank">Limburgs
-                                    Mooiste.</a>
+                                    Mooiste</a>
                             </li>
                         </ul>
                     </div>
@@ -121,127 +121,126 @@ const Regio = () => {
                         <ul className="regio-ul-list-1">
                             <li className="regio-li-items-1">
                                 <a className="regio-a-element" href="https://www.prix-de-rome.nl/" target="blank">Prix
-                                    de Rome.</a>
+                                    de Rome</a>
                             </li>
                             <li className="regio-li-items-1">
                                 <a className="regio-a-element"
                                    href="https://www.oostwegelcollection.nl/chateau-neercanne/restaurants/lunchrestaurant-lauberge/"
-                                   target="blank">l'Auberge de Neercanne.</a>
+                                   target="blank">l'Auberge de Neercanne</a>
                             </li>
                             <li className="regio-li-items-1">
-                                <a className="regio-a-element" href="https://pastory.nl/" target="blank">Pastory.</a>
+                                <a className="regio-a-element" href="https://pastory.nl/" target="blank">Pastory</a>
                             </li>
                             <li className="regio-li-items-1">
-                                <a className="regio-a-element" href="https://deleuf.nl/" target="blank">De Leuf.</a>
+                                <a className="regio-a-element" href="https://deleuf.nl/" target="blank">De Leuf</a>
                             </li>
                             <li className="regio-li-items-1">
                                 <a className="regio-a-element" href="https://www.dunordnoorbeek.nl/" target="blank">Du
-                                    Nord.</a>
+                                    Nord</a>
                             </li>
                             <li className="regio-li-items-1">
                                 <a className="regio-a-element" href="https://www.restaurantinfini.net/"
-                                   target="blank">Infini.</a>
+                                   target="blank">Infini</a>
                             </li>
                             <li className="regio-li-items-1">
                                 <a className="regio-a-element"
                                    href="https://www.chateauwittem.com/restaurants-bar/haute-cuisine-julemont/"
-                                   target="blank">Chateau Wittem.</a>
+                                   target="blank">Chateau Wittem</a>
                             </li>
                         </ul>
                     </div>
 
                     <div className="regio-outer-container-2">
                         <h1 className="regio-h2-1">
-                            De mooiste hotels en B&B's.
+                            De mooiste hotels en B&B's
                         </h1>
                         <ul className="regio-ul-list-1">
                             <li className="regio-li-items-1">
-                                <a className="regio-a-element" href="https://www.smockelaer.nl/nl/" target="blank">.</a>
                                 <a className="regio-a-element" href="https://www.smockelaer.nl/nl/" target="blank">De
-                                    Smockelaer.</a>
+                                    Smockelaer</a>
                             </li>
                             <li className="regio-li-items-1">
                                 <a className="regio-a-element"
                                    href="https://www.oostwegelcollection.nl/kruisherenhotel-maastricht/" target="blank">Kruisheren
-                                    hotel.</a>
+                                    hotel</a>
                             </li>
                             <li className="regio-li-items-1">
                                 <a className="regio-a-element"
                                    href="https://www.bilderberg.nl/vaals/kasteel-vaalsbroek/?gclid=Cj0KCQiAiJSeBhCCARIsAHnAzT8mdulrR5ZBJUnsOyo7NGQSU0rxbMFRgpLSHLaf0cQxGEGm2d2mbRsaAntYEALw_wcB"
-                                   target="blank">Bilderberg Vaals.</a>
+                                   target="blank">Bilderberg Vaals</a>
                             </li>
                             <li className="regio-li-items-1">
                                 <a className="regio-a-element"
                                    href="https://www.terworm.nl/?gclid=Cj0KCQiAiJSeBhCCARIsAHnAzT_CW01AEttsze-tTCdkjcLa6v6UaP6dc9sacqFZ_VcpokCiSmcEuTAaAvQ4EALw_wcB"
-                                   target="blank">Kasteel Terworm.</a>
+                                   target="blank">Kasteel Terworm</a>
                             </li>
                             <li className="regio-li-items-1">
                                 <a className="regio-a-element" href="https://www.wolfshuis.nl/"
-                                   target="blank">Wolfshuis.</a>
+                                   target="blank">Wolfshuis</a>
                             </li>
                             <li className="regio-li-items-1">
                                 <a className="regio-a-element" href="https://www.herbergsintbrigida.nl/" target="blank">Herberg
-                                    Sint Brigida.</a>
+                                    Sint Brigida</a>
                             </li>
                         </ul>
                     </div>
 
                     <div className="regio-outer-container-2">
                         <h1 className="regio-h2-1">
-                            De beste speciaal zaken.
+                            De beste speciaal zaken
                         </h1>
                         <ul className="regio-ul-list-1">
                             <li className="regio-li-items-1">
                                 <a className="regio-a-element" href="https://www.jefabelsbikes.nl/" target="blank">Jef
-                                    Abels Bikes.</a>
+                                    Abels Bikes</a>
                             </li>
                             <li className="regio-li-items-1">
                                 <a className="regio-a-element" href="https://www.salden.nl/" target="blank">Math
-                                    Salden.</a>
+                                    Salden</a>
                             </li>
                             <li className="regio-li-items-1">
-                                <a className="regio-a-element" href="https://www.frmd.nl/" target="blank">Framed.</a>
+                                <a className="regio-a-element" href="https://www.frmd.nl/" target="blank">Framed</a>
                             </li>
                             <li className="regio-li-items-1">
                                 <a className="regio-a-element" href="https://cyclesjeanhabets.nl/" target="blank">Jean
-                                    Habets.</a>
+                                    Habets</a>
                             </li>
                             <li className="regio-li-items-1">
                                 <a className="regio-a-element" href="https://www.valkbike.nl/" target="blank">ValkBike
-                                    verhuur.</a>
+                                    verhuur</a>
                             </li>
                         </ul>
                     </div>
 
                     <div className="regio-outer-container-2">
                         <h1 className="regio-h2-1">
-                            De lijst van VVV's.
+                            De lijst van VVV's
                         </h1>
                         <ul className="regio-ul-list-1">
                             <li className="regio-li-items-1">
                                 <a className="regio-a-element" href="https://www.visitzuidlimburg.nl/" target="blank">Visit
-                                    Zuid-Limburg.</a>
+                                    Zuid-Limburg</a>
                             </li>
                             <li className="regio-li-items-1">
                                 <a className="regio-a-element" href="https://www.bezoekmaastricht.nl/" target="blank">Bezoek
-                                    Maastricht.</a>
+                                    Maastricht</a>
                             </li>
                             <li className="regio-li-items-1">
                                 <a className="regio-a-element" href="https://www.vvvsittard-geleen.nl/" target="blank">VVV
-                                    Sittard-Geleen.</a>
+                                    Sittard-Geleen</a>
                             </li>
                             <li className="regio-li-items-1">
                                 <a className="regio-a-element" href="https://www.bezoekbrunssum.nl/" target="blank">Bezoek
-                                    Brunssum.</a>
+                                    Brunssum</a>
                             </li>
                             <li className="regio-li-items-1">
                                 <a className="regio-a-element" href="https://www.toerismevaals.nl/vvv-info/"
-                                   target="blank">VVV Vaals.</a>
+                                   target="blank">VVV Vaals</a>
                             </li>
                             <li className="regio-li-items-1">
                                 <a className="regio-a-element"
                                    href="https://www.visitzuidlimburg.nl/omgeving/plaatsen/detail/margraten/84/"
-                                   target="blank">VVV Margraten.</a>
+                                   target="blank">VVV Margraten</a>
                             </li>
                         </ul>
                     </div>
@@ -252,16 +251,16 @@ const Regio = () => {
 
                     <div className="regio-inner-container-1">
                         <h1 className="regio-h2-1">
-                            De beste hulp bij technische problemen.
+                            De beste hulp bij technische problemen
                         </h1>
                         <ul className="regio-ul-list-1">
                             <li className="regio-li-items-1">
                                 <a className="regio-a-element" href="https://cyclesjeanhabets.nl/" target="blank">Jean
-                                    Habets.</a>
+                                    Habets</a>
                             </li>
                             <li className="regio-li-items-1">
                                 <a className="regio-a-element" href="/https://www.fietsned-zuidlimburg.nl"
-                                   target="blank">L Walstock fietsNed.</a>
+                                   target="blank">L. Walstock fietsNed</a>
                             </li>
                         </ul>
                     </div>

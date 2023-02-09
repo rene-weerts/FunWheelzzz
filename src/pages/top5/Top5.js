@@ -1,116 +1,226 @@
-import React from 'react';
-// import axios from 'axios';
-// import {useState} from "react"
+import React, {useEffect, useRef, useState} from 'react';
+import axios from 'axios';
 import './Top5.css';
 import pictureMap from '../../assets/picture-map.jpg';
 import Button from '../../components/button/Button';
 import RadioButton from '../../components/radiobutton/RadioButton';
 import CheckBox from '../../components/checkbox/CheckBox';
 import InputFieldTop5Component from '../../components/inputfieldTop5/InputFieldTop5';
-// import {AuthContext} from '../../context/AuthContext';
 
-function Top5() {
-    // const {auth, setAuth} = useContext(AuthContext);
+const Top5 = () => {
+        const labelText1 = 'Maastricht';
+        const labelText2 = 'Geleen';
+        const labelText3 = 'Sittard';
+        const labelText4 = 'Brunssum';
+        const labelText5 = 'Kerkrade';
+        const labelText6 = 'Voerendaal';
+        const labelText7 = 'Valkenburg';
+        const labelText8 = 'Vaals';
+        const labelText9 = 'Gulpen';
+        const labelText10 = 'Margraten';
 
-
-//     // const BASE_URI = api.openWeatherMap.org / data / 2.5 / weather ? q =`${cityString}`uk & APPID =${apiKey}
-//     // const ENDPOINT = ff34a85592c12bf069a17cfe9ffe75aa;
-//     // const MyApi = BASE_URI + ENDPOINT;
-//     const [selectedCities, setSelectedCities] = useState([]); // store the selected city names
-//     const [selectedWeather, setSelectedWeather] = useState(''); // store the selected weather type
-//
-//     const handleCheckboxChange = (e) => {
-//         const {name, checked} = e.target;
-//         if (checked) {
-//             setSelectedCities([...selectedCities, name]);
-//         } else {
-//             setSelectedCities(selectedCities.filter(city => city !== name));
-//         }
-//     };
-//
-//     const handleRadioChange = (e) => {
-//         setSelectedWeather(e.target.value);
-//     };
-//
-//     const handleSubmit = (e) => {
-//         e.preventDefault();
-//         // do something with the selectedCities and selectedWeather data, such as making an API call
-//         console.log('selected cities: ', selectedCities);
-//         console.log('selected weather: ', selectedWeather);
-//         getWeather(selectedCities);
-//     };
-//
-//     const getWeather = async (cityNames) => {
-//         if (!Array.isArray(cityNames)) {
-//             console.error('cityNames should be an array of strings');
-//             return;
-//         }
-//         const cityString = cityNames.join(',');
-//         const apiKey = 'ff34a85592c12bf069a17cfe9ffe75aa';
-//         const apiUrl = `api.openWeatherMap.org/data/2.5/weather?q=${cityString}&APPID=${apiKey}`;
-//         try {
-//             const response = await axios.get(apiUrl);
-//             const data = await response.();
-//             console.log(data);
-//         } catch (error) {
-//             console.error(error);
-//         }
-//     };
-//  void getWeather()//
-
-    return (
-        <div className="top5-outer-container">
-            <div className="top5-inner-container">
-                <img className="top5-image" src={pictureMap} alt="map"/>
-                <div className="top5-outer-container-form">
-
-                    <form className="top5-inner-container-form">
-                        <p className="top5-info-text">Selecteer elke gewenste plaats...</p>
-                        <div className="top5-container-places">
-                            <p className="top5-places">Plaatsen.</p>
-                            <CheckBox labelText="Maastricht"/>
-                            <CheckBox labelText="Geleen"/>
-                            <CheckBox labelText="Sittard"/>
-                            <CheckBox labelText="Brunssum"/>
-                            <CheckBox labelText="Kerkrade"/>
-                            <CheckBox labelText="Voerendaal"/>
-                            <CheckBox labelText="Valkenburg"/>
-                            <CheckBox labelText="Gulpen"/>
-                            <CheckBox labelText="Vaals"/>
-                            <CheckBox labelText="Margraten"/>
-                        </div>
-
-                        <p className="top5-info-text">Selecteer 1 gewenst weertype...</p>
-
-                        <div className="top5-weather-types">
-                            <RadioButton/>
-                        </div>
-                        <div className="top5-button-component-container">
-                            <Button/>
-                        </div>
-                        <span id="error-message"></span>
-                    </form>
-
-                </div>
+        const [checked, setChecked] = useState({});
+        const [selectedValue, setSelectedValue] = useState([]);
 
 
-                <div className="top5-container-list">
-                    <p className="top5-list-text">Top 5</p>
-                    <p className="container-list-places">Plaatsen.</p>
-                    <div>
-                        <InputFieldTop5Component/>
+        const [dataArrayJSON, setDataArrayJSON] = useState(null);
+        // console.log(checked);
+        // console.log(selectedValue);
+        // console.log(dataArrayJSON);
+        const handleCheckBoxChange = (e) => {
+            setChecked({...checked, [e.target.value]: e.target.checked});
+            if (!e.target.checked) {
+
+                setSelectedValue(selectedValue.filter((value) => value !== e.target.value));
+            } else {
+                setSelectedValue([...selectedValue, e.target.value]);
+            }
+        };
+
+        const [checkedRadioButton, setCheckedRadioButton] = useState('');
+        const [radioList, setRadioList] = useState('');
+        const radioListRef = useRef('');
+        const handleRadioButtonChange = (e) => {
+            radioListRef.current = e.target.value;
+            setRadioList(e.target.value);
+        };
+        const weatherTypeRadio = (radioListRef.current);
+        console.log(weatherTypeRadio);
+
+        useEffect(() => {
+            const controller = new AbortController();
+            const GetWeather = async () => {
+                const cityList = selectedValue.join(',');
+                console.log(cityList);
+
+                // const apiUrl = 'http://api.openweathermap.org/data/2.5/find?q=&`${cityList}`&units=metric&type=accurate&mode=metric&APPID=';
+                // const apiKey = '723470e038b84ffe8c76c25d61879b53';
+                const apiUrl = 'http://api.openweathermap.org/data/2.5/weather?q=Maastricht&units=metric&type=accurate&mode=metric&APPID=';
+                const apiKey = '723470e038b84ffe8c76c25d61879b53';
+                {
+                    const response = await axios.get(apiUrl + apiKey);
+                    const weatherTypes = response.data;
+                    console.log(weatherTypes);
+                    setDataArrayJSON(JSON.stringify(weatherTypes));
+                    const {clouds} = weatherTypes;
+                    const sun = clouds.all;
+                    console.log(sun);
+                    console.log(`De meeste zon, ${sun} % bewolkt`);
+                    const temp = weatherTypes.main.temp;
+                    console.log(temp);
+                    console.log(`De hoogste temp, ${temp} Celcius`);
+                    //als er geen regen valt is er ook geen data (dus undefined)!!!
+                    // const {rain} = weatherTypes.main.rain;
+                    // console.log(rain);
+                    // console.log(`De meeste regen, ${rain} mm/u`)
+                    const {wind} = weatherTypes;
+                    console.log(wind.speed);
+                    console.log(`De hardste wind, ${wind.speed} km/u`);
+                }
+
+
+                    // if( Number(weatherTypeRadio) === 1){
+                // sun.numbers.sort((a, b) => a- b)
+                    //
+                    //
+                    //
+                    //     }
+                    // else(){
+                    //
+                    //     }catch (e) {
+                    //     console.error(e);
+                    // }
+
+
+            };
+            if (selectedValue.length) {
+                GetWeather().then(r => {
+                });
+            }
+            return function cleanup() {
+                controller.abort(); // <--- request annuleren
+            };
+        }, [selectedValue, weatherTypeRadio]);
+
+
+        return (
+            <div className="top5-outer-container">
+                <div className="top5-inner-container">
+                    <img className="top5-image" src={pictureMap} alt="map"/>
+                    <div className="top5-outer-container-form">
+                        <form onSubmit={Top5} className="top5-inner-container-form">
+                            <p className="top5-info-text">Selecteer elke gewenste plaats...</p>
+                            <div className="top5-container-places">
+                                <p className="top5-places">Plaatsen.</p>
+
+                                <CheckBox
+                                    labelText={labelText1}
+                                    value={labelText1}
+                                    onChange={handleCheckBoxChange}
+                                />
+                                <CheckBox
+                                    labelText={labelText2}
+                                    value={labelText2}
+                                    onChange={handleCheckBoxChange}
+                                />
+                                <CheckBox
+                                    labelText={labelText3}
+                                    value={labelText3}
+                                    onChange={handleCheckBoxChange}
+                                />
+                                <CheckBox
+                                    labelText={labelText4}
+                                    value={labelText4}
+                                    onChange={handleCheckBoxChange}
+                                />
+                                <CheckBox
+                                    labelText={labelText5}
+                                    value={labelText5}
+                                    onChange={handleCheckBoxChange}
+                                />
+                                <CheckBox
+                                    labelText={labelText6}
+                                    value={labelText6}
+                                    onChange={handleCheckBoxChange}
+                                />
+                                <CheckBox
+                                    labelText={labelText7}
+                                    value={labelText7}
+                                    onChange={handleCheckBoxChange}
+                                />
+                                <CheckBox
+                                    labelText={labelText8}
+                                    value={labelText8}
+                                    onChange={handleCheckBoxChange}
+                                />
+                                <CheckBox
+                                    labelText={labelText9}
+                                    value={labelText9}
+                                    onChange={handleCheckBoxChange}
+                                />
+                                <CheckBox
+                                    labelText={labelText10}
+                                    value={labelText10}
+                                    onChange={handleCheckBoxChange}
+                                />
+                            </div>
+                            <p className="top5-info-text">Selecteer 1 gewenst weertype...</p>
+                            <div className="top5-weather-types">
+                                <RadioButton
+                                    label="Zon"
+                                    name="weather"
+                                    value="1"
+                                    onChange={handleRadioButtonChange}
+                                    checked={setCheckedRadioButton}
+                                    // weather={weather}
+                                />
+                                <RadioButton
+                                    label="Temp"
+                                    name="weather"
+                                    value={2}
+                                    onChange={handleRadioButtonChange}
+                                    checked={setCheckedRadioButton}
+                                    // weather={weather}
+                                />
+                                <RadioButton
+                                    label="Regen"
+                                    name="weather"
+                                    value={3}
+                                    onChange={handleRadioButtonChange}
+                                    checked={setCheckedRadioButton}
+                                    // weather={weather}
+                                />
+                                <RadioButton
+                                    label="Wind"
+                                    name="weather"
+                                    value={4}
+                                    onChange={handleRadioButtonChange}
+                                    checked={setCheckedRadioButton}
+                                    // weather={weather}
+                                />
+
+
+                            </div>
+                            <div className="top5-button-component-container">
+                                <Button type="submit"/>
+                            </div>
+                            <span id="error-message"></span>
+                        </form>
                     </div>
-
-
+                    <div className="top5-container-list">
+                        <p className="top5-list-text">Top 5</p>
+                        <p className="container-list-places">Plaatsen.</p>
+                        <div>
+                            <InputFieldTop5Component/>
+                        </div>
+                    </div>
                 </div>
-
-
             </div>
 
+        );
 
-        </div>
-    );
-}
+    }
+;
 
 export default Top5;
 

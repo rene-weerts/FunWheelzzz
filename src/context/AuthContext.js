@@ -3,7 +3,6 @@ import {useNavigate} from 'react-router-dom';
 import axios from 'axios';
 
 export const AuthContext = createContext({});
-
 function AuthContextProvider({children}) {
 
     const navigate = useNavigate();
@@ -49,13 +48,12 @@ function AuthContextProvider({children}) {
                     id: response.data.id,
                     username: response.data.username
                 },
-
                 status: 'done'
             });
             if (redirect) {
                 navigate(redirect);
             }
-            console.log(response);
+            // console.log(response);
         } catch (e) {
             console.error(e);
             setAuth({
@@ -70,11 +68,12 @@ function AuthContextProvider({children}) {
 
         const storedToken = localStorage.getItem('token');
         if (storedToken) {
-            console.log(storedToken);
+            // console.log(storedToken);
             void fetchUserData(storedToken);
         } else {
 
             setAuth({
+
                 ...auth,
                 isAuth: false,
                 user: null,
@@ -97,10 +96,7 @@ function AuthContextProvider({children}) {
                 {auth.status === 'done' ? children : <p>Loading...</p>}
             </AuthContext.Provider>
         );
-
-
 }
-
 export default AuthContextProvider;
 
 

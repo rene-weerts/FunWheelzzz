@@ -4,7 +4,6 @@ import Button from '../../components/button/Button';
 import axios from 'axios';
 import {AuthContext} from '../../context/AuthContext';
 
-
 const login = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
@@ -35,9 +34,7 @@ const login = () => {
                             <div className="login-container-title">
                                 <h2 className="login-title">LOGIN</h2>
                                 <p className="login-text-p-title">Vul alstublieft in om in te loggen.</p>
-
                                 <div className="login-container-text">
-
                                     <label htmlFor="username"><p className="login-text-p">Gebruikersnaam</p></label>
                                     <input
                                         id="username"
@@ -64,21 +61,18 @@ const login = () => {
                                         <Button type="submit"/>
                                     </div>
                                     <div className="login-container-forgot-password">
-                                    <span className="login-text-forgot-psw">Wachtwoord vergeten? <a
-                                        href="/login">Wachtwoord?</a></span>
+                                    <span className="login-text-forgot-psw">
+                                        Wachtwoord vergeten?
+                                        <a href="/login">Wachtwoord?</a>
+                                    </span>
                                     </div>
                                 </div>
-
                             </div>
-
                         </div>
                     </div>
-
                 </form>
-
             </>
         );
-
 }
 export default login;
 

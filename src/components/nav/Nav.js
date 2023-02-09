@@ -33,12 +33,10 @@ const Nav = () => {
                             {<NavLink to="/register" style={navLinkStyles}>
                                 <p className={styles['nav-p-tag']}>Register</p>
                             </NavLink>}
-
                         </>
                     ) }
                     {isAuth &&(
                         <>
-
                             {<NavLink to="/home" style={navLinkStyles}>
                                 <p className={styles['nav-p-tag']}>Home</p>
                             </NavLink>}
@@ -54,22 +52,8 @@ const Nav = () => {
                             {<NavLink to="/logout" onClick={logout} style={navLinkStyles}>
                                 <p className={styles['nav-p-tag']}>Logout</p>
                             </NavLink>}
-
                         </>
                     )}
-
-
-
-
-
-
-                    {/* ! link altijd zichtbaar */}
-                    {/*auth is link werkt altijd*/}
-                    {/*!setAuth link verdwijnt ()*/}
-                    {/*setAuth link verschijnt()*/}
-                    {/*isAuth link is niet te zien als ingelogd of uitgelogd*/}
-
-
                 </ul>
             </nav>
         </header>

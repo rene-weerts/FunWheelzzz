@@ -45,7 +45,7 @@ const Home = () => {
                     <article>
                         <div className="region-container-terras">
                             <div className="region-terras-text">
-                                <h3 className="text-terras">een terrasje pikken..</h3>
+                                <h3 className="text-terras">een terrasje pikken...</h3>
                             </div>
                             <div>
                                 <img className="picture-terras" src={fotoTerras} alt="terras"/>
@@ -58,8 +58,8 @@ const Home = () => {
                             <article>
                                 <div className="region-container-bakery">
                                     <img className="picture-bakery" src={fotoBakkerij} alt="bakery"/>
-                                    <h3 className="text-bakery">..een bezoekje aan de beste bakker van de
-                                        streek..</h3>
+                                    <h3 className="text-bakery">een bezoekje aan de beste bakker van de
+                                        streek...</h3>
                                 </div>
                             </article>
                         </div>
@@ -67,7 +67,7 @@ const Home = () => {
                             <article>
                                 <div className="region-container-food-basilica">
                                     <img className="picture-food-basilica" src={fotoBasilica} alt="food-basilica"/>
-                                    <h3 className="text-food-basilica">..gastronomisch keuzes te over..</h3>
+                                    <h3 className="text-food-basilica">gastronomische keuzes te over...</h3>
                                 </div>
                             </article>
                         </div>
@@ -76,8 +76,8 @@ const Home = () => {
                     <article>
                         <div className="region-container-hotel">
                             <img className="picture-hotel" src={fotoAccommodatie} alt="hotel"/>
-                            <h3 className="text-hotel">..een verblijf in één van de prachtige accommodaties die
-                                typisch zijn voor deze streek..u vind het allemaal op onze Regio pagina bovenaan..
+                            <h3 className="text-hotel">een verblijf in één van de prachtige accommodaties die
+                                typisch zijn voor deze streek...u vindt het allemaal op onze Regio pagina bovenaan...
                             </h3>
                         </div>
                     </article>
