@@ -9,11 +9,8 @@ const Footer = () => {
     return (
 
         <footer className={styles['footer-outer-container']}>
-
             <div className={styles['footer-inner-container']}>
-
                 <div className={styles['footer-containers-ul']}>
-
                     <div className={styles["footer-container-1"]}>
                         <ul>
                             <li className={'footer-list-items'}>
@@ -24,12 +21,8 @@ const Footer = () => {
                                 <a href="/regio" className={styles['footer-a-tag']}><p
                                     className={styles['footer-p-tag']}>Regio</p></a>
                             </li>
-
                         </ul>
-
                     </div>
-
-
                     <div className={styles["footer-container-2"]}>
                         <div>
                             <li className={styles['footer-list-item-top5']}>
@@ -54,8 +47,6 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-
-
                 <div className={styles["footer-container-3"]}>
                     <ul>
                         <li className={'footer-list-items'}>
@@ -63,23 +54,15 @@ const Footer = () => {
                                 className={styles['footer-p-tag']}>Donate</p></a>
                         </li>
                         <li className={'footer-list-items'}>
-                            <a href="https://www.strava.com/login" target="blanc
-                        k" className={styles['footer-a-tag']}><p className={styles['footer-p-tag']}>Strava</p></a>
+                            <a href="https://www.strava.com/login" target="blanck"
+                               className={styles['footer-a-tag']}><p className={styles['footer-p-tag']}>Strava</p></a>
                         </li>
-
-
                     </ul>
-
                 </div>
-
-
             </div>
-
-
             <div className={styles['footer-credentials']}>
                 <p>copyright © FunWheels. 2023 </p>
             </div>
-
         </footer>
 
 

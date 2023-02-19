@@ -26,7 +26,6 @@ const Register = () => {
             navigate('/login');
             console.log(result.data);
 
-
         } catch (e) {
             console.error(e);
             setError(true);

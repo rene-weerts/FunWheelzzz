@@ -2,15 +2,12 @@ import React from 'react';
 import './Contact.css';
 import fotoContactForm from '../../assets/achtergrond-contact-formulier.jpg';
 import Button from '../../components/button/Button';
-// import {AuthContext} from '../../context/AuthContext';
 
 const Contact = () => {
-    // const {auth, setAuth} = useContext(AuthContext);
     return (
         <>
             <div className="outer-container-picture-form-contact">
                 <img className="picture-form" src={fotoContactForm} alt=""/>
-
                 <div className="outer-container-form">
                     <div className="form-text-top">
                         <h3 className="question-text-form"> Vragen of tips?</h3>
