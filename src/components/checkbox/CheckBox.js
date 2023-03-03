@@ -8,7 +8,7 @@ const CheckBox = ({labelText, checked, onChange}) => {
     return (
         <div className={styles['top5-checkbox-container']}>
             <input className={styles['top5-checkbox-input']}
-                   type="checkbox"
+                   type='checkbox'
                    id={'checkbox'}
                    value={labelText}
                    onChange={onChange}

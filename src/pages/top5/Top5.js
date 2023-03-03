@@ -1,7 +1,7 @@
 import React, {useRef, useState} from 'react';
 import axios from 'axios';
 import './Top5.css';
-import pictureMap from '../../assets/picture-map.jpg';
+import photoMap from '../../assets/photo-map.jpg';
 import Button from '../../components/button/Button';
 import RadioButton from '../../components/radiobutton/RadioButton';
 import CheckBox from '../../components/checkbox/CheckBox';
@@ -23,21 +23,26 @@ const Top5 = () => {
     const [citySun3, setCitySun3] = useState('');
     const [citySun4, setCitySun4] = useState('');
     const [citySun5, setCitySun5] = useState('');
+    const [weatherSortStringSun, setWeatherSortStringSun] = useState("")
     const [cityTemp1, setCityTemp1] = useState('');
     const [cityTemp2, setCityTemp2] = useState('');
     const [cityTemp3, setCityTemp3] = useState('');
     const [cityTemp4, setCityTemp4] = useState('');
     const [cityTemp5, setCityTemp5] = useState('');
+    const [weatherSortStringTemp, setWeatherSortStringTemp] = useState("")
     const [cityRain1, setCityRain1] = useState('');
     const [cityRain2, setCityRain2] = useState('');
     const [cityRain3, setCityRain3] = useState('');
     const [cityRain4, setCityRain4] = useState('');
     const [cityRain5, setCityRain5] = useState('');
+    const [weatherSortStringRain, setWeatherSortStringRain] = useState("")
     const [cityWind1, setCityWind1] = useState('');
     const [cityWind2, setCityWind2] = useState('');
     const [cityWind3, setCityWind3] = useState('');
     const [cityWind4, setCityWind4] = useState('');
     const [cityWind5, setCityWind5] = useState('');
+    const [weatherSortStringWind, setWeatherSortStringWind] = useState("")
+
     const [checked, setChecked] = useState({});
     const [selectedValue, setSelectedValue] = useState([]);
     const [checkedRadioButton] = useState('');
@@ -90,18 +95,24 @@ const Top5 = () => {
                     setCitySun3(citySun3);
                     setCitySun4(citySun4);
                     setCitySun5(citySun5);
+
                 } catch (e) {
                     console.log(e);
                 }
             }
 
             void getWeatherSun();
-        } else {
+        } if (weatherTypeRadio === '1'){
+            const newWeatherSortStringSun = "met de meeste zon"
+            setWeatherSortStringSun(newWeatherSortStringSun)
+        }
+        else {
             setCitySun1('');
             setCitySun2('');
             setCitySun3('');
             setCitySun4('');
             setCitySun5('');
+            setWeatherSortStringSun('')
         }
         if (weatherTypeRadio === '2') {
             async function getWeatherTemp() {
@@ -128,20 +139,24 @@ const Top5 = () => {
                     setCityTemp3(cityTemp3);
                     setCityTemp4(cityTemp4);
                     setCityTemp5(cityTemp5);
-                    console.log(cityTemp1);
                 } catch (e) {
                     console.log(e);
                 }
             }
 
             void getWeatherTemp();
-        } else {
+        }if (weatherTypeRadio === '2'){
+            const newWeatherSortStringTemp = 'met de hoogste temp'
+            setWeatherSortStringTemp(newWeatherSortStringTemp)
+        }
+        else {
             setCityTemp1('');
             setCityTemp1('');
             setCityTemp2('');
             setCityTemp3('');
             setCityTemp4('');
             setCityTemp5('');
+            setWeatherSortStringTemp('')
         }
         if (weatherTypeRadio === '3') {
             async function getWeatherRain() {
@@ -173,12 +188,17 @@ const Top5 = () => {
             }
 
             void getWeatherRain();
-        } else {
+        } if (weatherTypeRadio === '3'){
+            const newWeatherSortStringRain = 'met de meeste regen'
+            setWeatherSortStringRain(newWeatherSortStringRain)
+        }
+        else {
             setCityRain1('');
             setCityRain2('');
             setCityRain3('');
             setCityRain4('');
             setCityRain5('');
+            setWeatherSortStringRain('')
         }
         if (weatherTypeRadio === '4') {
             async function getWeatherWind() {
@@ -203,31 +223,37 @@ const Top5 = () => {
                     setCityWind3(cityWind3);
                     setCityWind4(cityWind4);
                     setCityWind5(cityWind5);
+
                 } catch (e) {
                     console.log(e);
                 }
             }
 
             void getWeatherWind();
-        } else {
+        } if (weatherTypeRadio === '4'){
+            const newWeatherSortStringTemp = 'met de meeste wind'
+            setWeatherSortStringTemp(newWeatherSortStringTemp)
+        }
+        else {
             setCityWind1('');
             setCityWind2('');
             setCityWind3('');
             setCityWind4('');
             setCityWind5('');
+            setWeatherSortStringWind('')
         }
     }
 
 
     return (
-        <div className="top5-outer-container">
-            <div className="top5-inner-container">
-                <img className="top5-image" src={pictureMap} alt="map"/>
-                <div className="top5-outer-container-form">
-                    <form onSubmit={handleSubmit} className="top5-inner-container-form">
-                        <p className="top5-info-text">Selecteer elke gewenste plaats..</p>
-                        <div className="top5-container-places">
-                            <p className="top5-places">Plaatsen.</p>
+        <div className='top5-outer-container'>
+            <div className='top5-inner-container'>
+                <img className='top5-image' src={photoMap} alt='map'/>
+                <div className='top5-outer-container-form'>
+                    <form onSubmit={handleSubmit} className='top5-inner-container-form'>
+                        <p className='top5-info-text'>Selecteer elke gewenste plaats..</p>
+                        <div className='top5-container-places'>
+                            <p className='top5-places'>Plaatsen.</p>
                             <CheckBox
                                 labelText={labelText1}
                                 value={labelText1}
@@ -279,50 +305,51 @@ const Top5 = () => {
                                 onChange={handleCheckBoxChange}
                             />
                         </div>
-                        <p className="top5-info-text">Selecteer 1 gewenst weertype..</p>
-                        <div className="top5-weather-types">
+                        <p className='top5-info-text'>Selecteer 1 gewenst weertype..</p>
+                        <div className='top5-weather-types'>
                             <RadioButton
-                                label="Zon"
-                                name="weather"
-                                value="1"
+                                label='Zon'
+                                name='weather'
+                                value='1'
                                 onChange={handleRadioButtonChange}
                                 checked={checkedRadioButton === '1'}
                                 radioList={radioList}
                             />
                             <RadioButton
-                                label="Temp"
-                                name="weather"
+                                label='Temp'
+                                name='weather'
                                 value={2}
                                 onChange={handleRadioButtonChange}
                                 checked={checkedRadioButton === '2'}
                                 radioList={radioList}
                             />
                             <RadioButton
-                                label="Regen"
-                                name="weather"
+                                label='Regen'
+                                name='weather'
                                 value={3}
                                 onChange={handleRadioButtonChange}
                                 checked={checkedRadioButton === '3'}
                                 radioList={radioList}
                             />
                             <RadioButton
-                                label="Wind"
-                                name="weather"
+                                label='Wind'
+                                name='weather'
                                 value={4}
                                 onChange={handleRadioButtonChange}
                                 checked={checkedRadioButton === '4'}
                                 radioList={radioList}
                             />
                         </div>
-                        <div className="top5-button-component-container">
-                            <Button type="submit"/>
+                        <div className='top5-button-component-container'>
+                            <Button type='submit'/>
                         </div>
-                        <span id="error-message"></span>
+                        <span id='error-message'></span>
                     </form>
                 </div>
-                <div className="top5-container-list">
-                    <p className="top5-list-text">Top 5</p>
-                    <p className="container-list-places">Plaatsen.</p>
+                <div className='top5-container-list'>
+                    <p className='top5-list-text'>Top 5</p>
+                    <p className='container-list-places'>Plaatsen</p>
+                    <p className='container-list-places'>{weatherSortStringSun}{weatherSortStringTemp}{weatherSortStringRain}{weatherSortStringWind}</p>
                     <div>
                         <InputFieldTop5
                             citySun1={citySun1}

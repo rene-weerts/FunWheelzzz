@@ -1,21 +1,27 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {useNavigate} from 'react-router-dom';
-
+import "./NotFound.css"
 const NotFound = () => {
     const navigate = useNavigate();
 
-    useEffect(()=>{
-        setTimeout(()=>{
-            // navigate(-1)
-        },3000)
-        navigate("/")
-    },[])
 
-return (
-    <div>
-        <h1>Page Not Found : 404</h1>
-        <p>You will be redirected in 3 sec</p>
-    </div>
+        setTimeout(()=>{
+            navigate('/')
+        },4000)
+
+    return (
+    <>
+        <div className='notFound-container'>
+            <div className='notFound-text-container'>
+                <p className='notFound-text1'>Pagina niet gevonden helaas!</p>
+            </div>
+            <div>
+                <p className='notFound-text2'>U keert terug naar de Home pagina in 4 sec.</p>
+            </div>
+        </div>
+
+    </>
+
 );
 }
 

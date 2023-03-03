@@ -1,11 +1,11 @@
-.regio-foto-kerk {
+.region-photo-church {
     display: flex;
     position: relative;
     width: 100%;
     box-shadow: 0 30px 60px -30px;
 }
 
-.regio-picture-repair {
+.region-photo-repair {
     display: flex;
     position: relative;
     width: 100%;
@@ -13,19 +13,19 @@
 }
 
 
-.regio-main-outer-container {
+.region-main-outer-container {
     display: flex;
     flex-direction: column;
     margin: 0 20px;
     position: relative;
 }
 
-.regio-outer-container-1 {
+.region-outer-container-1 {
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
 }
-.regio-inner-container-1 {
+.region-inner-container-1 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -39,7 +39,7 @@
     opacity: 0.91;
 }
 
-.regio-container-info-blok::before {
+.region-container-info-blok::before {
     content: 'REGIO';
     opacity: 0.5;
     position: absolute;
@@ -50,7 +50,7 @@
     bottom: 480px;
 }
 
-.regio-container-info-blok {
+.region-container-info-blok {
     display: flex;
     flex-wrap: wrap;
     padding-top: 50px;
@@ -60,7 +60,7 @@
     position: relative;
 }
 
-.regio-outer-container-2 {
+.region-outer-container-2 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -78,14 +78,14 @@
 
 }
 
-.regio-h1-1 {
+.region-h1-1 {
     font-size: 60px;
     margin: 0 20px;
     padding: 0 20px;
 
 }
 
-.regio-h2-1 {
+.region-h2-1 {
     display: block;
     font-size: 30px;
     margin: 0 20px;
@@ -93,13 +93,13 @@
 
 }
 
-.regio-h2-2 {
+.region-h2-2 {
     font-size: 40px;
     margin: 0 20px;
     padding: 0 20px;
 }
 
-.regio-text-1 {
+.region-text-1 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -111,7 +111,7 @@
 
 }
 
-.regio-ul-list-1 {
+.region-ul-list-1 {
     /*list-style-type: none;*/
     display: flex;
     flex-direction: column;
@@ -124,7 +124,7 @@
 
 }
 
-.regio-li-items-1::before {
+.region-li-items-1::before {
     content: "\2022";
     color: var(--cl-rood);
     font-weight: bolder;
@@ -135,25 +135,25 @@
 
 }
 
-.regio-text-top5-1 {
+.region-text-top5-1 {
     text-transform: uppercase;
     font-size: 20px;
     color: var(--cl-rood)
 }
 
-.regio-text-succes-1 {
+.region-text-succes-1 {
     margin: 0 40px;
     font-size: 18px;
 }
 
-.regio-a-element {
+.region-a-element {
     font-size: 25px;
     font-family: var(--urbanist-);
     color: var(--cl-txt);
 }
 
 
-.regio-outer-container-2 {
+.region-outer-container-2 {
     display: flex;
 
 }

@@ -36,7 +36,7 @@ function AuthContextProvider({children}) {
         try {
             const response = await axios.get(`https://frontend-educational-backend.herokuapp.com/api/user`,
                 { headers: {
-                "Content-Type": "application/json",
+                'Content-Type': 'application/json',
                         Authorization: `Bearer ${jwt}`,
         }})
 

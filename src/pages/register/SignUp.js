@@ -40,64 +40,64 @@ const Register = () => {
     return (
         <>
             <form onSubmit={handleSubmit}>
-                <div className="register-outer-container-background">
-                    <div className="register-inner-container">
-                        <div className="register-container-title">
-                            <h2 className="register-title">REGISTREREN</h2>
-                            <p className="register-text-p-title">Vul alstublieft in om een account te maken.</p>
+                <div className='register-outer-container-background'>
+                    <div className='register-inner-container'>
+                        <div className='register-container-title'>
+                            <h2 className='register-title'>REGISTREREN</h2>
+                            <p className='register-text-p-title'>Vul alstublieft in om een account te maken.</p>
                         </div>
-                        <div className="register-container-text">
+                        <div className='register-container-text'>
 
-                            <label htmlFor="username">
-                                <p className="register-text-p">Gebruikersnaam</p></label>
+                            <label htmlFor='username'>
+                                <p className='register-text-p'>Gebruikersnaam</p></label>
                             <input
-                                id="username"
-                                type="text"
-                                name="username"
+                                id='username'
+                                type='text'
+                                name='username'
                                 value={username}
                                 onChange={(e) => setUsername(e.target.value)}
-                                placeholder="Vul gebruikersnaam in..."
-                                autoComplete="off"
+                                placeholder='Vul gebruikersnaam in...'
+                                autoComplete='off'
                                 required
                             />
 
 
-                            <label htmlFor="email">
-                                <p className="register-text-p">Email</p></label>
+                            <label htmlFor='email'>
+                                <p className='register-text-p'>Email</p></label>
                             <input
-                                id="email"
-                                type="text"
-                                name="email"
+                                id='email'
+                                type='text'
+                                name='email'
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
-                                placeholder="Vul email in..."
-                                autoComplete="off"
+                                placeholder='Vul email in...'
+                                autoComplete='off'
                                 required
                             />
 
 
-                            <label htmlFor="password"
-                            ><p className="register-text-p">Wachtwoord</p></label>
+                            <label htmlFor='password'
+                            ><p className='register-text-p'>Wachtwoord</p></label>
                             <input
-                                id="password"
-                                type="password"
-                                name="password"
+                                id='password'
+                                type='password'
+                                name='password'
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
-                                placeholder="Vul wachtwoord in..."
-                                autoComplete="off"
+                                placeholder='Vul wachtwoord in...'
+                                autoComplete='off'
                                 required
                             />
 
-                            <div className="register-button-div">
+                            <div className='register-button-div'>
                                 <Button
-                                    type="submit"
+                                    type='submit'
                                 />
                             </div>
-                            <div className="container-sign-in">
-                                <p className="register-agreement-text">Bij het maken van een account gaat u akkoord
-                                    met onze <a href="/privacy verklaring">Privacyverklaring</a>.</p>
-                                <p>Heeft u al een account? <a href="/login">log in</a>.</p>
+                            <div className='container-sign-in'>
+                                <p className='register-agreement-text'>Bij het maken van een account gaat u akkoord
+                                    met onze <a href='/privacy statement'>Privacyverklaring</a>.</p>
+                                <p>Heeft u al een account? <a href='/login'>log in</a>.</p>
                             </div>
                         </div>
                     </div>
