@@ -6,7 +6,7 @@ const NotFound = () => {
 
 
         setTimeout(()=>{
-            navigate('/')
+            navigate('/home')
         },4000)
 
     return (

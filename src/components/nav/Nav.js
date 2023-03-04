@@ -29,7 +29,7 @@ const Nav = () => {
         <header>
             <nav className={styles['nav-default']}>
                 <div className={styles['nav-outer-container-wheelzzz']} id='header-home'>
-                    <p className={styles['nav-container-name-wheelzzz']}>Fun Wheelzzz</p>
+                    <p className={styles['nav-container-name-wheelzzz']}>FunWheelzzz</p>
                     <div className={styles['photo-flag-Limburg']}>
                         <img src={photoFlagLimburg} alt='flag-Limburg' width='45' height='25'/>
                     </div>
@@ -50,12 +50,13 @@ const Nav = () => {
                     ) }
                     {isAuth &&(
                         <>
-                            {<NavLink to='/home' style={navLinkStyles}>
-                                <p className={styles['nav-p-tag']}>Home</p>
-                            </NavLink>}
                             {<NavLink to='/top5' style={navLinkStyles}>
                                 <p className={styles['top5-color']}>Top5</p>
                             </NavLink>}
+                            {<NavLink to='/home' style={navLinkStyles}>
+                                <p className={styles['nav-p-tag']}>Home</p>
+                            </NavLink>}
+
                             {<NavLink to='/regio' style={navLinkStyles}>
                                 <p className={styles['nav-p-tag']}>Regio</p>
                             </NavLink>}

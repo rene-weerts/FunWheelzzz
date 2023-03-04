@@ -46,7 +46,7 @@
     display: flex;
     position: absolute;
     margin-top: 10px;
-    margin-left: 1320px;
+    margin-left: 1300px;
     width: 100px;
 
 }
@@ -55,7 +55,7 @@
     display: flex;
     position: absolute;
     margin-top: 10px;
-    margin-left: 1420px;
+    margin-left: 1410px;
     width: 100px;
 
 }
@@ -75,8 +75,8 @@
     list-style-type: none;
     justify-content: space-evenly;
     align-items: center;
-    margin-left: 100px;
-    margin-right: 24px;
+    margin-left: 0px;
+    margin-right: 0px;
     z-index: 3;
 
 }
