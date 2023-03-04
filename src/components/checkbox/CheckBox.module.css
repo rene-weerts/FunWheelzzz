@@ -1,0 +1,29 @@
+
+
+.top5-checkbox-container {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    margin-top: 5px;
+}
+
+.top5-checkbox-input {
+    cursor: pointer;
+    margin: 0 10px 0 10px;
+    width: 20px;
+    height: 20px;
+    background-color: mediumaquamarine;
+
+}
+
+.top5-checkbox-label {
+    display: flex;
+    font-family: var(--urbanist-);
+    color: var(--cl-txt);
+    font-size: 20px;
+    margin: 2px;
+    cursor: pointer;
+
+}
+
+

@@ -1,0 +1,107 @@
+
+.register-outer-container-background {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    padding-bottom: 150px;
+    background: var(--clbgc-linear);
+}
+
+.register-inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.register-container-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px 0 100px;
+}
+
+.register-title {
+    margin: 40px;
+}
+
+.register-text-p-title {
+    font-size: 20px;
+}
+
+.register-container-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-self: stretch;
+
+}
+
+.register-text-p {
+    margin: 20px;
+}
+::placeholder{
+    color:black;
+}
+#username{
+    line-height: 40px;
+    padding-left: 20px;
+    align-self: stretch;
+    background-color: var(--cl-bgc);
+    opacity: 0.5;
+}
+
+#email {
+    line-height: 40px;
+    padding-left: 20px;
+    align-self: stretch;
+    background-color: var(--cl-bgc), initial;
+    opacity: 0.5;
+}
+
+#password {
+    line-height: 40px;
+    padding-left: 20px;
+    align-self: stretch;
+    color: var(--cl-txt);
+    background-color: var(--cl-bgc);
+    opacity: 0.5;
+}
+
+#repeatPassword {
+    line-height: 40px;
+    padding-left: 20px;
+    align-self: stretch;
+    color: var(--cl-txt);
+    background-color: var(--cl-bgc);
+    opacity: 0.5;
+}
+
+.register-button-div {
+    display: flex;
+    justify-content: center;
+    align-self: stretch;
+    margin-top: 30px;
+}
+
+.register-button {
+    margin-top: 30px;
+    width: 200px;
+    height: 45px;
+    opacity: 0.7;
+    text-transform: uppercase;
+    border-radius: 15px;
+    margin-bottom: 20px;
+
+}
+
+.container-sign-in {
+
+}
+
+.register-agreement-text {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}

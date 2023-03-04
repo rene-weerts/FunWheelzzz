@@ -1,70 +1,116 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# FunWheelzzz
 
-## Available Scripts
+## introduction
 
-In the project directory, you can run:
+FunWheelzzz is a React project that provides information about the Zuid-Limburg region in
+the Netherlands. It's designed for cyclists who are either looking for places to cycle
+or tourists who want to explore the region by bike.
+The app includes information about hotels, restaurants, events, shops, technical help for
+bikes, and other points of interest, all accompanied by beautiful pictures.
 
-### `npm start`
+### Features
+Register and login page to get acces to the website.
+Home page containing beautiful pictures of the region's landmarks and attractions.
+Region page about hotels, restaurants, events, shops, and bike-related services.
+Contact page for users to ask questions or provide tips.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### main Feature
+Top 5 weather application that shows the weather of ten different places that people
+can visit.
+The weather can be chosen based on sun, rain, temperature, and wind.
+A top 5 list is created out of those places where it is best to go based on the data.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![photo-main-feature-top5](https://github.com/rene-weerts/fun-wheelzzz/blob/main/Scherm%C2%ADafbeelding%202023-03-04%20om%2014.09.37.png)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##### Installation
 
-### `npm run build`
+To install and run FunWheelzzz locally, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Clone the repository: git clone https://github.com/your-username/funwheelzzz.git
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Install dependencies: npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+react
+react-dom
+react-router-dom
+react-scripts
+axios
+jwt-decode
 
-### `npm run eject`
+Install dev-dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+dot.env
+parcel
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Scripts
+The following scripts are available for use:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+npm start: Starts the development server
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### Api documentation
 
-## Learn More
+This application is in need for an API URL and API key from
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. openWeater.org
+2. frontend-educational-backend.herokuapp.com
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+to make the Top5 feature work and to register and login.
 
-### Code Splitting
+#### Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To use FunWheelzzz, simply navigate to the app's homepage register and login.
+Start exploring the region to find hotels, restaurants, events, shops, and
+bike-related services in the region.
+Use the top 5 weather feature to find the best places to visit based on the 
+weather conditions.
 
-### Analyzing the Bundle Size
+#### file structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+|FunWheelzzz/
+|-parcel-cache
+|-node-modules
+|-public
+|-src/
+| --assets
+| --components/
+|   --button
+|   --checkbox
+|   --footer
+|   --hamburger button
+|   --inputFieldTop5
+|   --nav
+|   --radiobutton
+| --context
+| --pages/
+|   --contact
+|   --home
+|   --login
+|   --not found
+|   --privacy statement
+|   --region
+|   --register
+|   --top5
+| --styles
+| --App.js
+| --Index.js
+.env
+.gitignore
+package.json
+package-lock.json
+README.md
+External Libraries/
+| -node.js Core
+| -Project@types/*
 
-### Making a Progressive Web App
+#### Contributing
+Contributions to FunWheelzzz are always welcome. To contribute, please submit a bug report or a pull request to the project's repository.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+#### Contact Information
+If you have any questions or comments about FunWheelzzz, please contact the project maintainers at [rjmwrt@gmail.com].
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

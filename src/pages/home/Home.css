@@ -1,0 +1,342 @@
+
+
+h1 {
+    font-family: var(--amaranth-);
+    font-size: 60px;
+    color: var(--cl-txt);
+    padding-top: 5px;
+
+}
+
+h2 {
+    font-family: var(--amaranth-);
+    font-size: 30px;
+    color: var(--cl-txt);
+    padding-top: 5px;
+}
+
+h3 {
+    font-family: var(--amaranth-);
+    font-size: 30px;
+    color: var(--cl-txt);
+}
+
+p {
+    font-family: var(--urbanist-);
+    font-size: 16px;
+    color: var(--cl-txt);
+
+}
+
+a {
+    font-family: var(--urbanist-);
+    font-size: 16px;
+    color: var(--cl-txt);
+}
+
+.word-top5 {
+    color: var(--cl-rood);
+}
+
+
+.photo-header {
+    display: flex;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 30px 60px -30px;
+}
+
+.photo-main {
+    display: flex;
+    width: 100%;
+    box-shadow: 0 30px 60px -30px;
+}
+
+.header-outer-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    position: relative;
+    justify-content: center;
+
+
+}
+
+.header-text-outer-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    margin: 300px 700px 400px 20px;
+    background-color: var(--cl-bgc);
+
+}
+
+.header-text-inner-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.main-outer-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 100px 20px;
+
+}
+
+.home-container-text1-top5 {
+    display: flex;
+    position: absolute;
+    margin: 20px 1149px 0 20px;
+    padding: 80px 100px 100px 80px;
+    background-color: var(--cl-bgc);
+}
+
+.home-text1-top5 {
+    display: flex;
+    width: 200px;
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--cl-rood);
+
+}
+
+.main-inner-container-text-top5 {
+    display: flex;
+    position: absolute;
+    margin-top: 420px;
+    margin-left: 750px;
+    margin-right: 20px;
+    padding: 100px 600px 100px 100px;
+    background-color: rgba(140, 140, 140, 0.72);
+}
+
+
+.text-2-top5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    margin: 0 50px 0 0;
+    padding: 0 20px 0 20px;
+    background: transparent;
+}
+
+.region-container-terrace {
+    display: flex;
+    flex-direction: row;
+    margin: 100px 20px 0 20px;
+}
+
+.region-terrace-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.text-terrace {
+    padding: 30px 30px;
+    background-color: var(--cl-bgc);
+    box-shadow: 0 30px 60px -30px;
+}
+
+.photo-terrace {
+    width: 70%;
+    box-shadow: 0 30px 60px -30px;
+}
+
+.region-outer-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px 0 20px;
+}
+
+.region-inner-container{
+    display: flex;
+    position: relative;
+    margin: 0 0 0 50px;
+
+}
+.region-container-bakery {
+    display: flex;
+    margin: 100px 20px 0 20px;
+}
+.photo-bakery {
+    width: 40%;
+    position: relative;
+    box-shadow: 0 30px 60px -30px;
+}
+.text-bakery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    margin: 75px 0 0 529px;
+    padding: 20px 20px 20px 20px;
+    background-color: var(--cl-bgc);
+    box-shadow: 0 30px 60px -30px;
+}
+
+.region-outer-container-food {
+    display: flex;
+    position: absolute;
+    margin: 400px 100px 0 0;
+
+}
+
+.region-container-food-basilica {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 400px;
+}
+
+.photo-food-basilica {
+    width: 40%;
+    box-shadow: 0 30px 60px -30px;
+}
+
+.text-food-basilica {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 400px 0 20px 0;
+    padding: 0 20px;
+    background-color: var(--cl-bgc);
+    box-shadow: 0 30px 60px -30px;
+}
+
+.region-container-hotel {
+    display: flex;
+    margin: 450px 0 0 20px;
+
+
+}
+
+.photo-hotel {
+    width: 60%;
+    box-shadow: 0 30px 60px -30px;
+}
+
+.text-hotel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 200px 20px 200px 0;
+    padding-left: 20px;
+    background-color: var(--cl-bgc);
+    box-shadow: 0 30px 60px -30px;
+}
+
+.outer-container-photo-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    margin: 100px 20px 0 20px
+}
+
+.photo-form {
+    width: 100%;
+}
+
+.outer-container-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 520px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: var(--cl-bgc);
+}
+
+.form-text-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.question-text-form {
+    font-size: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.form-text {
+    display: flex;
+    flex-direction: column;
+}
+
+::placeholder {
+    color: black;
+
+}
+
+#name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-family: var(--urbanist-);
+    line-height: 40px;
+    padding-left: 10px;
+    background-color: var(--cl-bgc);
+    opacity: 0.5;
+}
+
+#email {
+    font-family: var(--urbanist-);
+    line-height: 40px;
+    padding-left: 10px;
+    background-color: var(--cl-bgc);
+    opacity: 0.5;
+}
+
+#message {
+    font-family: var(--urbanist-);
+    line-height: 150px;
+    padding-left: 10px;
+    background-color: var(--cl-bgc);
+    opacity: 0.5;
+}
+
+.button-div {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.button-form {
+    width: 150px;
+    height: 45px;
+    opacity: 0.7;
+    text-transform: uppercase;
+    border-radius: 15px;
+
+}
+.error-text{
+    margin-top: 10px;
+    padding-left: 9px;
+    font-size: 17px;
+    color: red;
+    background-color: var(--cl-zwart);
+}
+.login-thank-you-text{
+    margin-top: 10px;
+    padding-left: 9px;
+    font-size: 20px;
+    color: var(--cl-rood);
+    background-color: var(--cl-bgc-dark);
+}

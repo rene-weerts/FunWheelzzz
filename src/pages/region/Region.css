@@ -1,0 +1,163 @@
+.region-photo-church {
+    display: flex;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 30px 60px -30px;
+}
+
+.region-photo-repair {
+    display: flex;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 30px 60px -30px;
+}
+
+
+.region-main-outer-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    position: relative;
+}
+
+.region-outer-container-1 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.region-inner-container-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    width: 750px;
+    position: absolute;
+    margin: 40px 20px 0 690px;
+    border: solid 2px var(--cl-rood);
+    padding: 40px 20px;
+    background-color: var(--cl-bgc-dark);
+    opacity: 0.91;
+}
+
+.region-container-info-blok::before {
+    content: 'REGIO';
+    opacity: 0.5;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    color: var(--cl-txt);
+    font-size: 100px;
+    left: 580px;
+    bottom: 480px;
+}
+
+.region-container-info-blok {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    gap: 100px 40px;
+    position: relative;
+}
+
+.region-outer-container-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 440px;
+    height: 440px;
+    padding: 10px;
+    box-shadow: 0px 30px 60px -30px;
+    border: solid 2px var(--cl-rood);
+    color: var(--cl-txt);
+    background: var(--cl-bgc);
+    opacity: 0.8;
+    z-index: 1;
+
+
+}
+
+.region-h1-1 {
+    font-size: 60px;
+    margin: 0 20px;
+    padding: 0 20px;
+
+}
+
+.region-h2-1 {
+    display: block;
+    font-size: 30px;
+    margin: 0 20px;
+    color: var(--cl-txt);
+
+}
+
+.region-h2-2 {
+    font-size: 40px;
+    margin: 0 20px;
+    padding: 0 20px;
+}
+
+.region-text-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 20px 40px;
+    font-family: var(--urbanist-);
+    color: var(--cl-txt);
+    font-size: 18px;
+    line-height: 30px;
+
+}
+
+.region-ul-list-1 {
+    /*list-style-type: none;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+    line-height: 30px;
+    color: var(--cl-txt);
+    font-family: var(--urbanist-);
+
+}
+
+.region-li-items-1::before {
+    content: "\2022";
+    color: var(--cl-rood);
+    font-weight: bolder;
+    font-size: 50px;
+    width: 0.5em;
+    margin-right: 15px;
+
+
+}
+
+.region-text-top5-1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: var(--cl-rood)
+}
+
+.region-text-succes-1 {
+    margin: 0 40px;
+    font-size: 18px;
+}
+
+.region-a-element {
+    font-size: 25px;
+    font-family: var(--urbanist-);
+    color: var(--cl-txt);
+}
+
+
+.region-outer-container-2 {
+    display: flex;
+
+}
+
+
+
+
