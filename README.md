@@ -21,14 +21,18 @@ can visit.
 The weather can be chosen based on sun, rain, temperature, and wind.
 A top 5 list is created out of those places where it is best to go based on the data.
 
+
 ![photo-main-feature-top5](./src/assets/photo-main-feature.png)
+
+
+
 
 
 ##### Installation
 
 To install and run FunWheelzzz locally, follow these steps:
 
-Clone the repository: git clone https://github.com/your-username/funwheelzzz.git
+Clone the repository: git clone https://github.com/rene-weerts/Funwheelzzz.git
 
 Install dependencies: npm install
 
