@@ -4,9 +4,9 @@
 /node_modules
 /public
 /.pnp
-/.pnp.js
+.pnp.js
 /package.json
 /package-lock.json
-/.env.local
+.env.local
 
 
