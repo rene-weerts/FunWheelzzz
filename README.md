@@ -21,7 +21,7 @@ can visit.
 The weather can be chosen based on sun, rain, temperature, and wind.
 A top 5 list is created out of those places where it is best to go based on the data.
 
-![photo-main-feature-top5](../src/assets/photo-screenshot-top5.jpeg)
+![photo-main-feature-top5](./src/assets/photo-screenshot-top5.jpeg)
 
 
 ##### Installation
