@@ -7,7 +7,7 @@ const Contact = () => {
     return (
         <>
             <div className='outer-container-picture-form-contact'>
-                <img className='photo-form' src={photoContactForm} alt='photo-form'/>
+                <img className='photo-form' src={photoContactForm} alt='form'/>
                 <div className='outer-container-form'>
                     <div className='form-text-top'>
                         <h3 className='question-text-form'> Vragen of tips?</h3>
