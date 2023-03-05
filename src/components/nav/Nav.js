@@ -50,7 +50,7 @@ const Nav = () => {
                     {isAuth &&(
                         <>
                             {<NavLink to='/top5' style={navLinkStyles}>
-                                <p className={styles['top5-color']}>Top5</p>
+                                <p className={styles['top5-color']}>Top 5</p>
                             </NavLink>}
                             {<NavLink to='/home' style={navLinkStyles}>
                                 <p className={styles['nav-p-tag']}>Home</p>
