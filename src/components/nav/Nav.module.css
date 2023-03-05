@@ -34,7 +34,7 @@
     display: flex;
     position: absolute;
     margin-top: 7px;
-    margin-left: 1130px;
+    margin-left: 1115px;
 }
 
 .login-text {
@@ -75,8 +75,6 @@
     list-style-type: none;
     justify-content: space-evenly;
     align-items: center;
-    margin-left: 0px;
-    margin-right: 0px;
     z-index: 3;
 
 }
