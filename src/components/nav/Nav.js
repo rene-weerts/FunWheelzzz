@@ -70,7 +70,7 @@ const Nav = () => {
 
                 </ul>
                 <div className={styles['login-text-container']}>
-                    {formTouched &&
+                    {!isAuth && formTouched &&
                         <p className={styles['login-text']}>Log eerst in alstublieft!</p>}
                 </div>
                 <div className={styles['container-france']}>
