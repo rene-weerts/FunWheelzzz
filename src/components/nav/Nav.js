@@ -9,7 +9,6 @@ import HamburgerButton from '../hamburger button/HamburgerButton';
 
 const Nav = () => {
     const [formTouched, setFormTouched] = useState(false);
-    const [isHovering, setIsHovering] = useState(false);
     const {isAuth, logout} = useContext(AuthContext);
     const navLinkStyles = ({isActive}) => {
         return {
