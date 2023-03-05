@@ -104,10 +104,10 @@ const Region = () => {
                                    target="blank">Amstel Gold</a>
                             </li>
                             <li className="region-li-items-1">
-                                <a className="regio-a-element" href="https://www.mh2d.nl/" target="blank">Mh2d</a>
+                                <a className="region-a-element" href="https://www.mh2d.nl/" target="blank">Mh2d</a>
                             </li>
                             <li className="region-li-items-1">
-                                <a className="region-a-element" href="https://www.mh2d.nl/" target="blank">Limburgs
+                                <a className="region-a-element" href="https://www.limburgsmooiste.nl/" target="blank">Limburgs
                                     Mooiste</a>
                             </li>
                         </ul>
