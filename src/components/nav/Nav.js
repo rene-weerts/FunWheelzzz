@@ -9,7 +9,6 @@ import HamburgerButton from '../hamburger button/HamburgerButton';
 
 const Nav = () => {
     const [formTouched, setFormTouched] = useState(false);
-    const [isHovering, setIsHovering] = useState(false);
     const {isAuth, logout} = useContext(AuthContext);
     const navLinkStyles = ({isActive}) => {
         return {
@@ -51,7 +50,7 @@ const Nav = () => {
                     {isAuth &&(
                         <>
                             {<NavLink to='/top5' style={navLinkStyles}>
-                                <p className={styles['top5-color']}>Top5</p>
+                                <p className={styles['top5-color']}>Top 5</p>
                             </NavLink>}
                             {<NavLink to='/home' style={navLinkStyles}>
                                 <p className={styles['nav-p-tag']}>Home</p>
@@ -71,7 +70,7 @@ const Nav = () => {
 
                 </ul>
                 <div className={styles['login-text-container']}>
-                    {formTouched &&
+                    {!isAuth && formTouched &&
                         <p className={styles['login-text']}>Log eerst in alstublieft!</p>}
                 </div>
                 <div className={styles['container-france']}>
