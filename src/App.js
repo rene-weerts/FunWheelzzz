@@ -21,7 +21,7 @@ function App() {
        A         <Route path='/register' element={<Register/>}/>
                 <Route path='/login' element={<Login/>}/>
                 <Route path='/top5' element={isAuth ? <Top5/> : <Navigate to='/'/>}/>
-                <Route path='/regio' element={isAuth ? <Region/> : <Navigate to='/'/>}/>
+                <Route path='/region' element={isAuth ? <Region/> : <Navigate to='/'/>}/>
                 <Route path='/contact' element={isAuth ? <Contact/> : <Navigate to='/'/>}/>
                 <Route path='/logout' element={<Home/>}/>
                 <Route path='*' element={<Home/>}/>
