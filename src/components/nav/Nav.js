@@ -56,7 +56,7 @@ const Nav = () => {
                                 <p className={styles['nav-p-tag']}>Home</p>
                             </NavLink>}
 
-                            {<NavLink to='/regio' style={navLinkStyles}>
+                            {<NavLink to='/region' style={navLinkStyles}>
                                 <p className={styles['nav-p-tag']}>Regio</p>
                             </NavLink>}
                             {<NavLink to='/contact' style={navLinkStyles}>
