@@ -36,6 +36,13 @@ Clone the repository: git clone https://github.com/rene-weerts/Funwheelzzz.git
 
 Install dependencies: npm install
 
+Now you can run the application by using npm start.
+
+Npm commands:
+Npm start (starts the application on localhost.)
+Npm run build (to create a production build)
+
+Dependencies used in this application:
 react
 react-dom
 react-router-dom
@@ -43,7 +50,7 @@ react-scripts
 axios
 jwt-decode
 
-Install dev-dependencies:
+Dev-dependencies used in this application:
 
 dot.env
 parcel
